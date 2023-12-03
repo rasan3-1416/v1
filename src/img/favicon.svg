@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <path d="M 236.659 185.603 H 486.659 V 435.603 H 236.659 V 185.603 Z M 241.15 190.212 V 430.994 H 482.168 V 190.212 H 241.15 Z" style="stroke: rgb(0, 0, 0); fill: rgb(61, 219, 240);" transform="matrix(0.75972, -0.65025, 0.65025, 0.75972, -226.729187, 249.197449)" bx:shape="frame 236.659 185.603 250 250 4.491 4.609 0 0 0 0 1@c6757002"/>
+  <path d="M 125 125 H 375 V 375 H 125 V 125 Z M 131.127 131.127 V 368.873 H 368.873 V 131.127 H 131.127 Z" style="stroke: rgb(0, 0, 0); fill: rgb(61, 219, 240);" bx:shape="frame 125 125 250 250 6.127 6.127 0 0 0 0 1@0e87fe2c"/>
+  <text style="fill: rgb(61, 219, 240); font-family: Arial, sans-serif; font-size: 150px; text-anchor: middle; white-space: pre;" x="250" y="301.188">R</text>
+</svg>

@@ -1,0 +1,26 @@
+{
+  "name": "v1",
+  "version": "1.0.0",
+  "description": "This is the first iteration of my own personal portfolio website using tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "build-tail-css": "tailwindcss -i ./src/css/tailwind.css -o ./assets/css/tailwind.css --watch",
+    "minify-tail-css": "tailwindcss -i ./src/tailwind.css -o ./assets/tailwind.css --watch --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rasan3-1416/v1.git"
+  },
+  "keywords": [
+    "tailwindcss"
+  ],
+  "author": "Md. Rakib Hasan <md.rakibhasan3-1416@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rasan3-1416/v1/issues"
+  },
+  "homepage": "https://github.com/Rasan3-1416/v1#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
