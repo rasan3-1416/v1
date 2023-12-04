@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* Header Height */
+        --header-height: 3.5rem;
+        /* Font Styles */
+        --font-mono: 'DM Mono', monospace;
+        --font-lato: 'Lato', sans-serif;
+        /* Custom Color Components */
+        --first-hue: 187deg;
+        --second-hue: 219deg;
+        --sat: 86%;
+        --lig: 59%;
+        /* Custom Colors Palletes Variable */
+        --first-color: var(--first-hue) var(--sat) var(--lig);
+        --fist-color-alt: var(--first-hue) var(--sat) 55%; /* -4% lightness */
+        --title-color: var(--second-hue) 70% 88%;
+        --prime-color: var(--second-hue) 20% 61%;
+        --prime-color-dark: var(--second-hue) 20% 56%;
+        --body-color: var(--second-hue) 48% 8%;
+        --container-color: var(--second-hue) 40% 16%;
+        --white: #fff;
+        --black: #000;
+        
+    }
+}
+
+@layer components {}
+
+@layer utilities {}
+
