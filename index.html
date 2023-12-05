@@ -12,6 +12,105 @@
     <link rel="stylesheet" href="./assets/css/tailwind.css">
 </head>
 <body>
+    <!-- Start Header -->
+    <header id="header">
+        <nav>
+            <div class="container h-header flex justify-between items-center ">
+                <a href="#">
+                    <!-- Header Logo -->
+                    <svg class="logo" viewBox="0 0 500 500" width="500" height="500">
+                        <path d="M 236.659 185.603 H 486.659 V 435.603 H 236.659 V 185.603 Z M 251.659 200.603 V 420.603 H 471.659 V 200.603 H 251.659 Z" data-bx-shape="frame 236.659 185.603 250 250 15 15 0 0 0 0 1@fd113514" style="stroke: rgb(0, 0, 0); fill: rgb(61, 219, 240);" transform="matrix(0.75972, -0.65025, 0.65025, 0.75972, -226.729187, 249.197449)"></path>
+                        <path d="M 125 125 H 375 V 375 H 125 V 125 Z M 140 140 V 360 H 360 V 140 H 140 Z" data-bx-shape="frame 125 125 250 250 15 15 0 0 0 0 1@d71eed80" style="stroke: rgb(0, 0, 0); fill: rgb(61, 219, 240);"></path>
+                        <text style="fill: rgb(61, 219, 240); font-family: Arial, sans-serif; font-size: 150px; text-anchor: middle; white-space: pre;" x="250" y="301.188">R</text>
+                    </svg>
+                </a>
+                <!-- Menu For Desktop -->
+                <div class="hidden md:block w-full px-10" id="desktop-menu">
+                    <ul class="flex justify-end gap-x-4">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#works">Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Theme Button -->
+                <button class="transe-ease hover:text-c-first" type="button">
+                    <!-- Theme Button Icon -->
+                    <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Menu For Mobile -->
+        <div class="fixed md:hidden bottom-4 w-full flex justify-center">
+            <ul class="inline-flex justify-between w-[80%] sm:w-[350px] py-4 px-8 xm:px-4 rounded-md bg-[hsl(var(--second-hue),40%,16%,0.7)] backdrop-blur-[10px]">
+                <li><a class="tooltip" href="#home">
+                    <span class="tooltip-text">Home</span>
+                    <!-- Home Icon -->
+                    <span class="flex p-1">
+                        <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <polyline points="5 12 3 12 12 3 21 12 19 12"></polyline>
+                            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+                        </svg>
+                    </span>
+                </a></li>
+                <li><a class="tooltip" href="#about">
+                    <span class="tooltip-text">About</span>
+                    <!-- About Icon -->
+                    <span class="flex p-1">
+                        <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="12" cy="12" r="9"></circle>
+                            <circle cx="12" cy="10" r="3"></circle>
+                            <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
+                        </svg>
+                    </span>
+                </a></li>
+                <li><a class="tooltip" href="#skills">
+                    <span class="tooltip-text">Skills</span>
+                    <!-- Skills Icon -->
+                    <span class="flex p-1">
+                        <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z"></path>
+                            <path d="M19 16h-12a2 2 0 0 0 -2 2"></path>
+                            <path d="M9 8h6"></path>
+                        </svg>
+                    </span>
+                </a></li>
+                <li><a class="tooltip" href="#works">
+                    <span class="tooltip-text">Works</span>
+                    <!-- Works Icon -->
+                    <span class="flex p-1">
+                        <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-briefcase" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="3" y="7" width="18" height="13" rx="2"></rect>
+                            <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path>
+                            <line x1="12" y1="12" x2="12" y2="12.01"></line>
+                            <path d="M3 13a20 20 0 0 0 18 0"></path>
+                        </svg>
+                    </span>
+                </a></li>
+                <li><a class="tooltip" href="#contact">
+                    <span class="tooltip-text">Contact</span>
+                    <!-- Contact Icon -->
+                    <span class="flex p-1">
+                        <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10"></path>
+                            <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2"></path>
+                         </svg>
+                    </span>
+                </a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- End Header -->
 
     <script src="./src/js/script.js"></script>
 </body>

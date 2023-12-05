@@ -24,11 +24,56 @@
         --container-color: var(--second-hue) 40% 16%;
         --white: #fff;
         --black: #000;
-        
+    }
+    body, input, textarea {
+        @apply font-lato;
+    }
+    body {
+        @apply m-0 p-0 fs-lg leading-5 text-c-prime-dark bg-c-body;
+    }
+    h1, h2, h3 {
+        @apply text-c-title font-semibold
+    }
+    a {
+        @apply font-mono transe-ease hover:text-c-first
     }
 }
 
-@layer components {}
+@layer components {
+    /* Reusable Classes */
+    .logo {
+        @apply w-[50px] h-[50px] xm:w-[40px] xm:h-[40px] lg:w-[60px] lg:h-[60px]
+    }
+    /* Tooltip Styles */
+    .tooltip {
+        @apply relative
+    }
+    .tooltip-text {
+        @apply absolute top-0 left-[50%] translate-x-[-50%] fs-sm py-1 px-3 bg-c-body rounded-[4px] shadow-first pointer-events-none  invisible opacity-0 transe-ease;
+    }
+    .tooltip-text::after {
+        @apply content-[''] absolute top-full left-[50%] translate-x-[-50%];
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 10px solid hsl(var(--body-color));
+    }
+    .tooltip:hover .tooltip-text {
+        @apply visible opacity-100 top-[-110%];
+    }
 
-@layer utilities {}
+}
 
+@layer utilities {
+    
+}
+
+/* Header Desktop Menu Styles */
+#desktop-menu ul li {
+    @apply fs-sm;
+    counter-increment: item 1;
+}
+#desktop-menu ul li a {
+    &::before {
+        @apply content-["0"_counter(item)_"."] fs-xm mr-[5px] text-c-first
+    }
+}

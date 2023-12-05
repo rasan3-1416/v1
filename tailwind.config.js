@@ -4,7 +4,7 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   content: [
-    "index.html"
+    './index.html',
   ],
   darkMode: 'class',
   theme: {
@@ -29,17 +29,21 @@ module.exports = {
       },
       spacing: {
         'initial': 'initial',
+      },
+      boxShadow: {
+        'first': '0px 0px 15px 0px hsla(var(--first-hue), var(--sat), var(--lig), 0.5)'
       }
     },
     colors: {
       // Custom colors according to css variables value
+      'transparent': 'transparent',
       'c-first': 'hsl(var(--first-color) / <alpha-value>)',
       'c-first-alt': 'hsl(var(--first-color-alt) / <alpha-value>)',
       'c-title': 'hsl(var(--title-color) / <alpha-value>)',
       'c-prime': 'hsl(var(--prime-color) / <alpha-value>)',
-      'c-prime-dark': 'hsl(var(prime-color-dark) / <alpha-value>',
-      'c-body': 'hsl(var(body-color) / <alpha-value>)',
-      'c-container': 'hsl(var(container-color) / <alpha-value>)',
+      'c-prime-dark': 'hsl(var(--prime-color-dark) / <alpha-value>)',
+      'c-body': 'hsl(var(--body-color) / <alpha-value>)',
+      'c-container': 'hsl(var(--container-color) / <alpha-value>)',
       'c-white': 'var(--white)',
       'c-black': 'var(--black)',
     },
@@ -51,7 +55,20 @@ module.exports = {
       'lg': '992px',
       'xl': '1024px',
       'xxl': '1250px',
-    }
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+      },
+      screens: {
+        sm: '576px',
+        md: '768px',
+        lg: '992px',
+        xl: '1024px',
+        xxl: '1250px',
+      }
+    },
   },
   plugins: [
     plugin(function({ addUtilities }){
@@ -67,7 +84,10 @@ module.exports = {
         '.fs-xm': {fontSize: '0.75rem', '@screen xm': {fontSize: '0.65rem'}, '@screen sm': {fontSize: '0.8125rem'}},
         '.fs-xxm': {fontSize: '0.65rem', '@screen xm': {fontSize: '0.5rem'}, '@screen sm': {fontSize: '0.75rem'}},
         // Responsive Header Height
-        '.h-header': {height: 'var(--header-height)', '@screen md': {height: 'calc(var(--header-height) + 1.5rem)'}}
+        '.h-header': {height: 'var(--header-height)', '@screen md': {height: 'calc(var(--header-height) + 1.5rem)'}},
+        // Custom Transition
+        '.transe-ease': {transition: '0.3s ease-in-out'},
+        'transe-ease-l': {transition: '0.4s ease-in-out'}
       })
     }),
     plugin(function({ addVariant }){
