@@ -56,19 +56,6 @@ module.exports = {
       'xl': '1024px',
       'xxl': '1250px',
     },
-    container: {
-      center: true,
-      padding: {
-        DEFAULT: '1rem',
-      },
-      screens: {
-        sm: '576px',
-        md: '768px',
-        lg: '992px',
-        xl: '1024px',
-        xxl: '1250px',
-      }
-    },
   },
   plugins: [
     plugin(function({ addUtilities }){
@@ -92,6 +79,20 @@ module.exports = {
     }),
     plugin(function({ addVariant }){
       addVariant ('dynamic-style', '.dynamic-style&')
+    }),
+    plugin(function({ addComponents }){
+      addComponents({
+        // Custom Container Styles
+        '.container': {
+          maxWidth: '1250px', paddingLeft: '1.5rem', paddingRight: '1.5rem',
+          '@screen md': {paddingleft: '2rem', paddingRight: '2rem'},
+          '@screen lg': {paddingLeft: '6rem', paddingRight: '6rem'},
+          '@screen xl': {paddingLeft: '8rem', paddingRight: '8rem'},
+          '@screen xxl': {marginLeft: 'auto', marginRight: 'auto'},
+        },
+        // Custom Utility Classes
+        '.vertical-rl': {writingMode: 'vertical-rl'}
+      })
     })
   ],
 }
