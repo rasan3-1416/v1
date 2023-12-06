@@ -60,7 +60,20 @@
     .tooltip:hover .tooltip-text {
         @apply visible opacity-100 top-[-110%];
     }
-
+    /* Section Styles */
+    .section {
+        @apply pt-16 pb-4 lg:pt-24 xl:pt-32 xl:pb-8
+    }
+    /* Button Styles */
+    .btn {
+        @apply font-mono fs-sm py-4 px-5 xm:py-3 xm:px-4 rounded-md
+    }
+    .btn-hollow {
+        @apply border border-solid border-c-first text-c-first hover:bg-c-first/10;
+    }
+    .btn-filled {
+        @apply bg-c-first text-c-body hover:bg-c-first/80 hover:text-c-body;
+    }
 }
 
 @layer utilities {
