@@ -42,7 +42,7 @@
 @layer components {
     /* Reusable Classes */
     .logo {
-        @apply w-[50px] h-[50px] xm:w-[40px] xm:h-[40px] lg:w-[60px] lg:h-[60px]
+        @apply w-[35px] h-[35px] xm:w-[30px] xm:h-[30px] md:w-[40px] md:h-[40px] lg:w-[45px] lg:h-[45px]
     }
     /* Tooltip Styles */
     .tooltip {
