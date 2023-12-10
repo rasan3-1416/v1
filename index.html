@@ -13,8 +13,8 @@
 </head>
 <body>
     <!-- Start Header -->
-    <header id="header">
-        <nav class="max-w-[1250px] px-4 sm:px-6 md:px-8 xxl:mx-auto">
+    <header class="dynamic-style:fixed dynamic-style:left-0 dynamic-style:right-0 dynamic-style:w-full dynamic-style:bg-c-body dynamic-style:shadow-dark dynamic-style:z-fixed transe-ease-l" id="header">
+        <nav class="max-w-[1250px] px-4 sm:px-6 md:px-8 xxl:mx-auto" id="">
             <div class="h-header flex justify-between items-center ">
                 <a href="#">
                     <!-- Header Logo -->
@@ -59,78 +59,80 @@
                 </button>
             </div>
         </nav>
-        <!-- Menu For Mobile -->
-        <div class="fixed md:hidden bottom-4 w-full flex justify-center">
-            <ul class="inline-flex justify-between w-[80%] sm:w-[350px] py-4 px-8 xm:px-4 rounded-md bg-[hsl(var(--second-hue),40%,16%,0.7)] backdrop-blur-[10px]">
-                <li><a class="tooltip" href="#home">
-                    <span class="tooltip-text">Home</span>
-                    <!-- Home Icon -->
-                    <span class="flex p-1">
-                        <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <polyline points="5 12 3 12 12 3 21 12 19 12"></polyline>
-                            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
-                            <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
-                        </svg>
-                    </span>
-                </a></li>
-                <li><a class="tooltip" href="#about">
-                    <span class="tooltip-text">About</span>
-                    <!-- About Icon -->
-                    <span class="flex p-1">
-                        <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <circle cx="12" cy="12" r="9"></circle>
-                            <circle cx="12" cy="10" r="3"></circle>
-                            <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
-                        </svg>
-                    </span>
-                </a></li>
-                <li><a class="tooltip" href="#skills">
-                    <span class="tooltip-text">Skills</span>
-                    <!-- Skills Icon -->
-                    <span class="flex p-1">
-                        <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z"></path>
-                            <path d="M19 16h-12a2 2 0 0 0 -2 2"></path>
-                            <path d="M9 8h6"></path>
-                        </svg>
-                    </span>
-                </a></li>
-                <li><a class="tooltip" href="#works">
-                    <span class="tooltip-text">Works</span>
-                    <!-- Works Icon -->
-                    <span class="flex p-1">
-                        <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-briefcase" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <rect x="3" y="7" width="18" height="13" rx="2"></rect>
-                            <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path>
-                            <line x1="12" y1="12" x2="12" y2="12.01"></line>
-                            <path d="M3 13a20 20 0 0 0 18 0"></path>
-                        </svg>
-                    </span>
-                </a></li>
-                <li><a class="tooltip" href="#contact">
-                    <span class="tooltip-text">Contact</span>
-                    <!-- Contact Icon -->
-                    <span class="flex p-1">
-                        <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10"></path>
-                            <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2"></path>
-                         </svg>
-                    </span>
-                </a></li>
-            </ul>
-        </div>
     </header>
     <!-- End Header -->
 
-    <!-- Fixed Side Content Start -->
+    <!-- Start Menu For Mobile -->
+    <div class="fixed md:hidden bottom-4 w-full flex justify-center z-fixed">
+        <ul class="inline-flex justify-between w-[80%] sm:w-[350px] py-4 px-8 xm:px-4 rounded-md bg-[hsl(var(--second-hue),40%,16%,0.7)] backdrop-blur-[10px]">
+            <li><a class="tooltip" href="#home">
+                <span class="tooltip-text">Home</span>
+                <!-- Home Icon -->
+                <span class="flex p-1">
+                    <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <polyline points="5 12 3 12 12 3 21 12 19 12"></polyline>
+                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+                    </svg>
+                </span>
+            </a></li>
+            <li><a class="tooltip" href="#about">
+                <span class="tooltip-text">About</span>
+                <!-- About Icon -->
+                <span class="flex p-1">
+                    <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <circle cx="12" cy="10" r="3"></circle>
+                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
+                    </svg>
+                </span>
+            </a></li>
+            <li><a class="tooltip" href="#skills">
+                <span class="tooltip-text">Skills</span>
+                <!-- Skills Icon -->
+                <span class="flex p-1">
+                    <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z"></path>
+                        <path d="M19 16h-12a2 2 0 0 0 -2 2"></path>
+                        <path d="M9 8h6"></path>
+                    </svg>
+                </span>
+            </a></li>
+            <li><a class="tooltip" href="#works">
+                <span class="tooltip-text">Works</span>
+                <!-- Works Icon -->
+                <span class="flex p-1">
+                    <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-briefcase" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <rect x="3" y="7" width="18" height="13" rx="2"></rect>
+                        <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path>
+                        <line x1="12" y1="12" x2="12" y2="12.01"></line>
+                        <path d="M3 13a20 20 0 0 0 18 0"></path>
+                    </svg>
+                </span>
+            </a></li>
+            <li><a class="tooltip" href="#contact">
+                <span class="tooltip-text">Contact</span>
+                <!-- Contact Icon -->
+                <span class="flex p-1">
+                    <svg class="w-[23px] h-[23px]" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10"></path>
+                        <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2"></path>
+                     </svg>
+                </span>
+            </a></li>
+        </ul>
+    </div>
+    <!-- End Menu For Mobile -->
+
+    <!-- Start Fixed Side Content -->
     <div class="hidden md:block fixed bottom-0 left-8 xxl:left-12">
         <!-- Left Side Social Links -->
-        <ul class="grid gap-y-6 after:content-[''] after:block after:w-[1px] after:h-[90px] after:mx-auto after:bg-c-prime">
+        <ul class="grid gap-y-6 fixed-line-after after:mt-0">
             <li><a class="group" href="https://github.com/Rasan3-1416" target="_blank">
                 <span class="w-[22px] h-[22px]">
                     <!-- Github Icon -->
@@ -163,16 +165,16 @@
             </a></li>
         </ul>
     </div>
-    <div class="hidden md:block fixed bottom-0 right-8 xxl:right-12 after:content-[''] after:block after:w-[1px] after:h-[90px] after:mx-auto after:mt-6 after:bg-c-prime">
+    <div class="hidden md:block fixed fixed-line-after bottom-0 right-8 xxl:right-12">
         <!-- Right Side Email -->
         <a class="fs-sm vertical-rl hover:translate-y-[-7px]" href="mailto:md.rakibhasan3.1416@gmail.com">md.rakibhasan3.1416@gmail.com</a>
     </div>
-    <!-- Fixed Side Content End -->
+    <!-- End Fixed Side Content -->
 
-    <!-- Main Start -->
+    <!-- Start Main -->
     <main class="overflow-hidden">
-        <!-- Home Start -->
-        <section class="section pt-20" id="home">
+        <!-- Start Home Section -->
+        <section class="min-h-[100vh] flex items-center pb-12" id="home">
             <div class="container">
                 <span class="inline-block font-mono fs-lg text-c-first mb-4">Hi, my name is</span>
                 <h1 class="fs-biggest leading-[1.2] mb-2">
@@ -189,9 +191,47 @@
                 </div>
             </div>
         </section>
-        <!-- Home End -->
+        <!-- End Home Section -->
+
+        <!-- Start About Section -->
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section-heading">About Me</h2>
+                <div class="grid xl:grid-cols-[60%,40%] gap-10">
+                    <div class="grid gap-y-6">
+                        <p>
+                            Hi, Myself <span class="text-c-first">Md. Rakib Hasan</span>, I am a skilled <span class="text-c-first">Front-End Developer</span> who likes to build stuff that views the web. My interest in Frontend development started during my journey while learning <span class="text-c-first">UI/UX Design</span> back in 2020. I felt very interested in making my designs more interactive with users which led me to Frontend development. After a while, I started learning the way of the web and started my career path as a Front-End Developer.
+                        </p>
+                        <p>
+                            Fast forward to today, I had the privilege of working at many remote marketplaces like <span class="text-c-first">Fiverr Freelancer.com Upwork</span>, etc. During my journey through the web, my main focus was to build accessible, inclusive sites with complex functionality and security. Which led me to the backend part of the web.
+                        </p>
+                        <p>
+                            So I have also started my journey for the <span class="text-c-first">Backend</span>. To learn how the web works from the core and how complexity works from the view of a developer. Now I started learning <span class="text-c-first">React & Node.js</span>.
+                        </p>
+                        <p>
+                            Here are a few technologies I've been working with recently:
+                        </p>
+                        <ul class="max-w-[350px] grid grid-cols-2 gap-y-3 fs-sm font-mono">
+                            <li class="first-arrow">JavaScript (ES6+)</li>
+                            <li class="first-arrow">React</li>
+                            <li class="first-arrow">Node.js</li>
+                            <li class="first-arrow">TypeScript</li>
+                            <li class="first-arrow">Wordpress</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center">
+                        <div class="">
+                            <div class="relative overlay-before frame-after-line transe-ease hover:-translate-x-1 hover:-translate-y-1">
+                                <img class="max-w-[270px] max-h-[300px] xm:max-w-[200px] xm:max-h-[230px] rounded-md" src="./src/img/about-img.png" alt="About Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
     </main>
-    <!-- Main End -->
+    <!-- End Main -->
 
     <script src="./src/js/script.js"></script>
 </body>

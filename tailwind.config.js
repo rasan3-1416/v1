@@ -31,7 +31,8 @@ module.exports = {
         'initial': 'initial',
       },
       boxShadow: {
-        'first': '0px 0px 15px 0px hsla(var(--first-hue), var(--sat), var(--lig), 0.5)'
+        'first': '0px 0px 15px 0px hsla(var(--first-hue), var(--sat), var(--lig), 0.5)',
+        'dark': 'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px'
       }
     },
     colors: {
@@ -62,19 +63,19 @@ module.exports = {
       addUtilities ({
         // Responsive Typography
         '.fs-biggest': {fontSize:'clamp(2.25rem, 8vw, 5rem)'},
-        '.fs-heading': {fontSize: '1.575rem', '@screen xm': {fontSize: '1.5rem'}, '@screen sm': {fontSize: '2rem'}},
-        '.fs-xxl': {fontSize: '1.25rem', '@screen xm': {fontSize: '1.125rem'}, '@screen sm': {fontSize: '1.375rem'}},
-        '.fs-xl': {fontSize: '1.125rem', '@screen xm': {fontSize: '1rem'}, '@screen sm': {fontSize: '1.25rem'}},
-        '.fs-lg': {fontSize: '1rem', '@screen xm': {fontSize: '0.875rem'}, '@screen sm': {fontSize: '1.125rem'}},
-        '.fs-md': {fontSize: '0.875rem', '@screen xm': {fontSize: '0.8125rem'}, '@screen sm': {fontSize: '1rem'}},
-        '.fs-sm': {fontSize: '0.8125rem', '@screen xm': {fontSize: '0.75rem'}, '@screen sm': {fontSize: '0.875rem'}},
-        '.fs-xm': {fontSize: '0.75rem', '@screen xm': {fontSize: '0.65rem'}, '@screen sm': {fontSize: '0.8125rem'}},
-        '.fs-xxm': {fontSize: '0.65rem', '@screen xm': {fontSize: '0.5rem'}, '@screen sm': {fontSize: '0.75rem'}},
+        '.fs-heading': {fontSize: 'var(--fs-heading)'},
+        '.fs-xxl': {fontSize: 'var(--fs-xxl)'},
+        '.fs-xl': {fontSize: 'var(--fs-xl)'},
+        '.fs-lg': {fontSize: 'var(--fs-lg)'},
+        '.fs-md': {fontSize: 'var(--fs-md)'},
+        '.fs-sm': {fontSize: 'var(--fs-sm)'},
+        '.fs-xm': {fontSize: 'var(--fs-xm)'},
+        '.fs-xxm': {fontSize: 'var(--fs-xxm)'},
         // Responsive Header Height
         '.h-header': {height: 'var(--header-height)', '@screen md': {height: 'calc(var(--header-height) + 1.5rem)'}},
         // Custom Transition
         '.transe-ease': {transition: '0.3s ease-in-out'},
-        'transe-ease-l': {transition: '0.4s ease-in-out'}
+        '.transe-ease-l': {transition: '0.4s ease-in-out'}
       })
     }),
     plugin(function({ addVariant }){

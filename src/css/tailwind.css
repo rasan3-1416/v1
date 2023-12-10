@@ -24,15 +24,45 @@
         --container-color: var(--second-hue) 40% 16%;
         --white: #fff;
         --black: #000;
+        /* Responsive Typography */
+        --fs-heading: 1.575rem;
+        --fs-xxl: 1.25rem;
+        --fs-xl: 1.125rem;
+        --fs-lg: 1rem;
+        --fs-md: 0.875rem;
+        --fs-sm: 0.8125rem;
+        --fs-xm: 0.75rem;
+        --fs-xxm: 0.65rem;
+        @screen xm {
+            --fs-heading: 1.5rem;
+            --fs-xxl: 1.125rem;
+            --fs-xl: 1rem;
+            --fs-lg: 0.875rem;
+            --fs-md: 0.8125rem;
+            --fs-sm: 0.75rem;
+            --fs-xm: 0.65rem;
+            --fs-xxm: 0.5rem;
+        }
+        @screen sm {
+            --fs-heading: 2rem;
+            --fs-xxl: 1.375rem;
+            --fs-xl: 1.25rem;
+            --fs-lg: 1.125rem;
+            --fs-md: 1rem;
+            --fs-sm: 0.875rem;
+            --fs-xm: 0.8125rem;
+            --fs-xxm: 0.75rem;
+        }
     }
     body, input, textarea {
         @apply font-lato;
     }
     body {
         @apply m-0 p-0 fs-lg leading-5 text-c-prime-dark bg-c-body;
+        counter-reset: section 0;
     }
     h1, h2, h3 {
-        @apply text-c-title font-semibold
+        @apply text-c-title font-semibold;
     }
     a {
         @apply font-mono transe-ease hover:text-c-first
@@ -60,9 +90,11 @@
     .tooltip:hover .tooltip-text {
         @apply visible opacity-100 top-[-110%];
     }
-    /* Section Styles */
-    .section {
-        @apply pt-16 pb-4 lg:pt-24 xl:pt-32 xl:pb-8
+    /* Fixed Side Lines */
+    .fixed-line-after {
+        &::after {
+            @apply content-[''] block w-[1px] h-[90px] mx-auto mt-6 bg-c-prime
+        }
     }
     /* Button Styles */
     .btn {
@@ -73,6 +105,43 @@
     }
     .btn-filled {
         @apply bg-c-first text-c-body hover:bg-c-first/80 hover:text-c-body;
+    }
+    /* Section Styles */
+    .section {
+        @apply pt-16 pb-4 lg:pt-24 xl:pt-32 xl:pb-8;
+    }
+    .section-heading {
+        @apply relative flex items-end mt-3 mb-8 whitespace-nowrap;
+        font-size: clamp(22px, 5vw, var(--fs-heading));
+        &::before{
+            @apply content-['0'_counter(section)_'.'] relative top-1 font-mono font-normal text-c-first mr-3;
+            counter-increment: section 1;
+            font-size: clamp(var(--fs-md), 3vw, var(--fs-lg));
+        }
+        &::after {
+            @apply content-[''] relative block w-[300px] h-[1px] ml-5 bg-c-container;
+        }
+    }
+    /* Arrow Styles */
+    .first-arrow {
+        @apply relative pl-5 flex items-center;
+        &::after {
+            @apply content-['▹'] absolute left-0 text-c-first leading-3
+        }
+    }
+    /* First Frame line */
+    .frame-after-line {
+        &::after {
+            @apply content-[''] absolute top-3 left-3 w-full h-full border-2 border-solid border-c-first rounded-md z-[-1] transe-ease
+        }
+        @apply hover:after:top-6 hover:after:left-5;
+    }
+    /* Overlay Styles */
+    .overlay-before {
+        &::before {
+            @apply content-[''] absolute top-0 left-0 w-full h-full bg-c-first rounded-md opacity-50 transe-ease
+        }
+        @apply hover:before:opacity-0 hover:before:invisible
     }
 }
 
