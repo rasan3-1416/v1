@@ -86,7 +86,7 @@ module.exports = {
         // Custom Container Styles
         '.container': {
           maxWidth: '1250px', paddingLeft: '1.5rem', paddingRight: '1.5rem',
-          '@screen md': {paddingLeft: '4.5rem', paddingRight: '4.5rem'},
+          '@screen md': {paddingLeft: '5rem', paddingRight: '5rem'},
           '@screen lg': {paddingLeft: '6rem', paddingRight: '6rem'},
           '@screen xl': {paddingLeft: '8rem', paddingRight: '8rem'},
           '@screen xxl': {marginLeft: 'auto', marginRight: 'auto'},

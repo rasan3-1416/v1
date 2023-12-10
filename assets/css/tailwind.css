@@ -675,8 +675,8 @@ a:hover {
 
 @media (min-width: 768px) {
   .container {
-    padding-left: 4.5rem;
-    padding-right: 4.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 
@@ -1063,6 +1063,10 @@ a:hover {
   position: relative;
 }
 
+.-top-12 {
+  top: -3rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -1125,18 +1129,6 @@ a:hover {
 
 .max-h-\[300px\] {
   max-height: 300px;
-}
-
-.min-h-\[\] {
-  min-height: ;
-}
-
-.min-h-\[1\] {
-  min-height: 1;
-}
-
-.min-h-\[100\] {
-  min-height: 100;
 }
 
 .min-h-\[100vh\] {
@@ -1220,6 +1212,10 @@ a:hover {
   overflow: hidden;
 }
 
+.\!scroll-smooth {
+  scroll-behavior: smooth !important;
+}
+
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -1247,35 +1243,13 @@ a:hover {
   padding-right: 2rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.pb-1 {
-  padding-bottom: 0.25rem;
-}
-
 .pb-12 {
   padding-bottom: 3rem;
-}
-
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
-
-.pb-32 {
-  padding-bottom: 8rem;
 }
 
 .font-mono {
@@ -1394,10 +1368,6 @@ a:hover {
   left: 0px;
 }
 
-.dynamic-style.dynamic-style\:top-0 {
-  top: 0px;
-}
-
 .dynamic-style.dynamic-style\:right-0 {
   right: 0px;
 }
@@ -1421,15 +1391,11 @@ a:hover {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.dynamic-style.dynamic-style\:transe-ease {
-  transition: 0.3s ease-in-out;
-}
-
-.dynamic-style.dynamic-style\:transe-ease-l {
-  transition: 0.4s ease-in-out;
-}
-
 @media (max-width: 320px) {
+  .xm\:-top-6 {
+    top: -1.5rem;
+  }
+
   .xm\:max-h-\[230px\] {
     max-height: 230px;
   }
@@ -1441,14 +1407,6 @@ a:hover {
   .xm\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-
-  .xm\:pt-12 {
-    padding-top: 3rem;
-  }
-
-  .xm\:pt-1 {
-    padding-top: 0.25rem;
   }
 }
 
@@ -1464,6 +1422,10 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+  .md\:-top-0 {
+    top: -0px;
+  }
+
   .md\:block {
     display: block;
   }
