@@ -54,6 +54,26 @@
             --fs-xxm: 0.75rem;
         }
     }
+    * { 
+        /* Scrollbar Styles For different browser */
+
+        /* For FireFox */
+        scrollbar-width: 10px;
+        scrollbar-color: hsl(var(--prime-color)) transparent;
+        scrollbar-width: thin;
+        /* Chrome, Edge, and Safari */
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            @apply bg-transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            @apply transe-ease bg-c-container hover:bg-c-prime/60;
+            
+        }
+    
+    }
     body, input, textarea {
         @apply font-lato;
     }
@@ -111,7 +131,7 @@
         @apply pt-16 pb-4 lg:pt-24 xl:pt-32 xl:pb-8;
     }
     .section-heading {
-        @apply relative flex items-end mt-3 mb-8 whitespace-nowrap;
+        @apply relative flex items-end mt-3 mb-10 whitespace-nowrap;
         font-size: clamp(22px, 5vw, var(--fs-heading));
         &::before{
             @apply content-['0'_counter(section)_'.'] relative top-1 font-mono font-normal text-c-first mr-3;
