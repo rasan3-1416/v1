@@ -20,6 +20,16 @@ module.exports = {
         'fixed': 100,
         'modal': 1000,
       },
+      // Custom Animation
+      keyframes: {
+        scaleIncrease: {
+          '0%': {transform: 'scale(0.9)'},
+          '100%': {transform: 'scale(1.0)'}
+        },
+      },
+      animation: {
+        'scale-increase': 'scaleIncrease 0.4s ease-in-out'
+      },
       // Initial value for width height and spacing
       width: {
         'initial': 'initial',
@@ -33,7 +43,7 @@ module.exports = {
       boxShadow: {
         'first': '0px 0px 15px 0px hsla(var(--first-hue), var(--sat), var(--lig), 0.5)',
         'dark': 'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px'
-      }
+      },
     },
     colors: {
       // Custom colors according to css variables value
