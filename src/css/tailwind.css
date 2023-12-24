@@ -91,12 +91,22 @@
 
 @layer components {
     /* Reusable Classes */
+
+    /*  Hide scrollbar for Chrome, Safari and Opera  */
+    .hide-scrollbar::-webkit-scrollbar {
+        @apply hidden;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
     .logo {
         @apply w-[35px] h-[35px] xm:w-[30px] xm:h-[30px] md:w-[40px] md:h-[40px] lg:w-[45px] lg:h-[45px]
     }
     /* Tooltip Styles */
     .tooltip {
-        @apply relative
+        @apply relative block;
     }
     .tooltip-text {
         @apply absolute top-0 left-[50%] translate-x-[-50%] fs-sm py-1 px-3 bg-c-body rounded-[4px] shadow-first pointer-events-none  invisible opacity-0 transe-ease;
@@ -108,7 +118,7 @@
         border-top: 10px solid hsl(var(--body-color));
     }
     .tooltip:hover .tooltip-text {
-        @apply visible opacity-100 top-[-110%];
+        @apply visible opacity-100 top-[-120%];
     }
     /* Fixed Side Lines */
     .fixed-line-after {
@@ -159,7 +169,7 @@
     }
     /* Arrow Styles */
     .after-arrow-first {
-        @apply relative pl-5;
+        @apply relative pl-5 flex items-start;
         &::after {
             @apply content-['▹'] absolute left-0 text-c-first leading-3
         }
@@ -192,11 +202,10 @@
     }
 }
 
-@layer utilities {
-    
-}
+@layer utilities {}
 
 /* Header Desktop Menu Styles */
+
 #desktop-menu ul li {
     @apply fs-sm;
     counter-increment: item 1;

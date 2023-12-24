@@ -1,4 +1,5 @@
 const viewportWidth = window.visualViewport.width
+const body = document.querySelector('body')
 const header = document.getElementById('header')
 
 
@@ -25,7 +26,7 @@ const skillsTab = document.getElementById('skills-tab')
 const skillsTabBtns = skillsTab.querySelectorAll('button')
 const skillsTabIndicator = document.getElementById('skills-tab-indicator')
 const skillsBody = document.getElementById('skills-body')
-const skillsBodyContent = skillsBody.querySelectorAll('div')
+const skillsBodyContent = skillsBody.querySelectorAll('#skills-body-block')
 
 const skillsLeftScrollNotifier = document.getElementById('skills-left-scroll-notifier')
 skillsLeftScrollNotifier.addEventListener('click', () => {
@@ -64,12 +65,12 @@ skillsTabBtns.forEach((element, index) => {
         let preActiveBody = skillsBody.querySelector('div.dynamic-style')
         let activeBody = skillsBodyContent[index]
         displacement(preActiveBody, activeBody)
-        if(viewportWidth > 768){
+        if(viewportWidth > 576){
             // For Desktop Devices Style
             skillsTabIndicator.style.top = `calc(0px + ${index * 50}px)`
         }else {
             // For Mobile Devices Style
-            skillsTabIndicator.style.left = `calc(0px + ${index * 150}px)`
+            skillsTabIndicator.style.left = `calc(0px + ${index * 120}px)`
         }
     })
     
@@ -83,14 +84,17 @@ const serviceModals = document.querySelectorAll('#service-modal')
 const serviceModalsCloseBtn = document.querySelectorAll('#service-modal-close')
 
 // A query function that goes through elements to execute the required action
-function actionQueryTaker(actionElements, TargetElements) {
+function actionQueryTaker(actionElements, TargetElements, primeElement) {
+    primeElement = primeElement || body
     actionElements.forEach((element,index) => {
         element.addEventListener('click', () => {
             let activeElement = TargetElements[index]
             if(!activeElement.classList.contains('dynamic-style')){
                 activeElement.classList.add('dynamic-style')
+                primeElement.classList.add('dynamic-style')
             }else {
                 activeElement.classList.remove('dynamic-style')
+                primeElement.classList.remove('dynamic-style')
             } 
         })
     })
