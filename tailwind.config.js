@@ -16,8 +16,8 @@ module.exports = {
       },
       zIndex: {
         // Custom Z index value
-        'tooltip': 10,
-        'fixed': 100,
+        'tooltip': 100,
+        'fixed': 200,
         'modal': 1000,
       },
       // Custom Animation
@@ -57,6 +57,7 @@ module.exports = {
       'c-container': 'hsl(var(--container-color) / <alpha-value>)',
       'c-white': 'var(--white)',
       'c-black': 'var(--black)',
+      'c-blue': '#64ffda'
     },
     screens: {
       // Custom Breakpoints

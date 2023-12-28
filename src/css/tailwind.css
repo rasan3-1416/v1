@@ -16,7 +16,7 @@
         --lig: 59%;
         /* Custom Colors Palletes Variable */
         --first-color: var(--first-hue) var(--sat) var(--lig);
-        --fist-color-alt: var(--first-hue) var(--sat) 55%; /* -4% lightness */
+        --first-color-alt: var(--first-hue) var(--sat) 55%; /* -4% lightness */
         --title-color: var(--second-hue) 70% 88%;
         --prime-color: var(--second-hue) 20% 61%;
         --prime-color-dark: var(--second-hue) 20% 56%;
@@ -165,7 +165,7 @@
     }
     .content-title {
         font-size: clamp(22px, 5vw, 28px);
-        @apply mb-6 text-c-first text-center;
+        @apply text-center text-c-first mb-6;
     }
     /* Arrow Styles */
     .after-arrow-first {
@@ -195,10 +195,17 @@
     }
     /* Overlay Styles */
     .overlay-before {
+        @apply relative;
         &::before {
             @apply content-[''] absolute top-0 left-0 w-full h-full bg-c-first rounded-md opacity-50 transe-ease
         }
-        @apply hover:before:opacity-0 hover:before:invisible
+        @apply hover:before:opacity-0 hover:before:invisible;
+    }
+    .container-after-overlay {
+        @apply relative hover:after:opacity-0;
+        &::after {
+            @apply content-[''] absolute top-0 left-0 w-full h-full z-30 bg-c-container/75 rounded-md transe-ease;
+        }
     }
 }
 
@@ -214,4 +221,9 @@
     &::before {
         @apply content-["0"_counter(item)_"."] fs-xm mr-[5px] text-c-first
     }
+}
+
+.hello {
+    grid-area: 1 / 6 / -1 / -1;
+    
 }

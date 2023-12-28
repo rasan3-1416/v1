@@ -63,7 +63,7 @@
     <!-- End Header -->
 
     <!-- Start Menu For Mobile -->
-    <div class="fixed md:hidden bottom-4 w-full flex justify-center z-fixed ">
+    <div class="fixed hidden bottom-4 w-full flex justify-center z-fixed ">
         <ul class="inline-flex justify-between w-[80%] sm:w-[350px] py-4 px-8 xm:px-4 rounded-md bg-[hsl(var(--second-hue),40%,16%,0.7)] backdrop-blur-[10px] shadow-dark">
             <li><a class="tooltip" href="#home">
                 <span class="tooltip-text">Home</span>
@@ -220,7 +220,7 @@
                         </ul>
                     </div>
                     <div class="flex justify-center">
-                        <div class="">
+                        <div>
                             <div class="relative overlay-before frame-after-line transe-ease hover:-translate-x-1 hover:-translate-y-1">
                                 <img class="max-w-[200px] max-h-[230px] xm:max-w-[170px] xm:max-h-[200px] sm:max-w-[250px] sm:max-h-[2280px] rounded-md" src="./src/img/about-img.png" alt="About Image">
                             </div>
@@ -400,7 +400,121 @@
         </section>
         <!-- End Services Section -->
 
-        
+        <!-- Start Work section -->
+        <section class="section" id="works">
+            <div class="container">
+                <h2 class="section-heading">Projects I've Built</h2>
+                <div class="grid gap-y-12 md:gap-y-24">
+                    <!-- Featured Project - 1 -->
+                    <div class="relative grid grid-cols-[repeat(12,1fr)] items-center gap-3">
+                        <div class="col-[1/-1] row-[1/-1] md:col-[5/-1] xl:col-[7/-1] z-50 px-8 py-10 md:px-0 md:py-0">
+                            <p class="fs-sm md:text-end text-c-first my-3">Game Project</p>
+                            <h3 class="content-title text-start md:text-end text-c-title">
+                                <a class="font-lato" href="https://rasan3-1416.github.io/Blackjack/" target="_blank">Blackjack</a>
+                            </h3>
+                            <div class="md:p-6 md:rounded-md md:bg-c-container md:shadow-dark">
+                                <p class="fs-md z-5 brightness-150">
+                                    Blackjack is a web game that uses <span class="text-c-first">JavaScript</span>. You will be playing against a bot and your goal is to score higher than the bot, but not go over a certain number. The game will provide you with rules to follow.
+                                </p>
+                            </div>
+                            <ul class="flex md:justify-end gap-x-6 mt-6 mb-3 brightness-150">
+                                <li class="fs-xm">JavaScript</li>
+                                <li class="fs-xm">Html5</li>
+                                <li class="fs-xm">CSS3</li>
+                                <li class="fs-xm">SCSS</li>
+                            </ul>
+                            <div class="flex md:justify-end gap-x-6 brightness-150">
+                                <a href="https://github.com/Rasan3-1416/Blackjack" target="_blank">
+                                    <svg class="w-[22px] h-[22px]" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title><fontsninja-text id="fontsninja-text-232">GitHub</fontsninja-text></title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                                <a href="https://rasan3-1416.github.io/Blackjack/" target="_blank">
+                                    <svg class="w-[22px] h-[22px]" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title><fontsninja-text id="fontsninja-text-236">External Link</fontsninja-text></title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-[1/-1] row-[1/-1] md:col-[1/8] z-10 h-full md:h-auto">
+                            <a href="https://rasan3-1416.github.io/Blackjack/" target="_blank">
+                                <div class="container-after-overlay w-full h-full md:h-auto">
+                                    <img class="w-full h-full md:max-w-[600px] md:h-auto rounded-md object-cover shadow-dark" src="./src/img/featured-1.webp" alt="Featured Project - 1">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Featured Project - 2 -->
+                    <div class="relative grid grid-cols-[repeat(12,1fr)] items-center gap-3">
+                        <div class="col-[1/-1] row-[1/-1] md:col-[1/9] xl:col-[1/7] z-50 px-8 py-10 md:px-0 md:py-0">
+                            <p class="fs-sm text-c-first my-3">Ecomerce Project</p>
+                            <h3 class="content-title text-start text-c-title">
+                                <a class="font-lato" href="https://rasan3-1416.github.io/Rolex-ecomerce-site/" target="_blank">Rolex</a>
+                            </h3>
+                            <div class="md:p-6 md:rounded-md md:bg-c-container md:shadow-dark">
+                                <p class="fs-md z-5 brightness-150">
+                                    Rolex is a brand-focused e-commerce website built using the best CSS framework, <span class="text-c-first">Tailwind CSS</span>. The site has dark and light themes, along with a cart option. Multiple product sliders are available to display products.
+                                </p>
+                            </div>
+                            <ul class="flex gap-x-6 mt-6 mb-3 brightness-150">
+                                <li class="fs-xm">Html5</li>
+                                <li class="fs-xm">CSS3</li>
+                                <li class="fs-xm">Tailwind CSS</li>
+                                <li class="fs-xm">JavaScript</li>
+                            </ul>
+                            <div class="flex gap-x-6 brightness-150">
+                                <a href="https://github.com/Rasan3-1416/Rolex-ecomerce-site" target="_blank">
+                                    <svg class="w-[22px] h-[22px]" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title><fontsninja-text id="fontsninja-text-232">GitHub</fontsninja-text></title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                                <a href="https://rasan3-1416.github.io/Rolex-ecomerce-site/" target="_blank">
+                                    <svg class="w-[22px] h-[22px]" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title><fontsninja-text id="fontsninja-text-236">External Link</fontsninja-text></title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-[1/-1] row-[1/-1] md:col-[6/-1] z-10 h-full md:h-auto">
+                            <a href="https://rasan3-1416.github.io/Rolex-ecomerce-site/" target="_blank">
+                                <div class="container-after-overlay w-full h-full md:h-auto">
+                                    <img class="w-full h-full md:max-w-[600px] md:h-auto rounded-md object-cover shadow-dark" src="./src/img/featured-2.webp" alt="Featured Project - 1">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Featured Project - 3 -->
+                    <div class="relative grid grid-cols-[repeat(12,1fr)] items-center gap-3">
+                        <div class="col-[1/-1] row-[1/-1] md:col-[5/-1] xl:col-[7/-1] z-50 px-8 py-10 md:px-0 md:py-0">
+                            <p class="fs-sm md:text-end text-c-first my-3">Portfolio Project</p>
+                            <h3 class="content-title text-start md:text-end text-c-title">
+                                <a class="font-lato" href="https://rasan3-1416.github.io/Ansel-Klee/" target="_blank">Ansel Klee</a>
+                            </h3>
+                            <div class="md:p-6 md:rounded-md md:bg-c-container md:shadow-dark">
+                                <p class="fs-md z-5 brightness-150">
+                                    Ansel Klee, it's a portfolio website built using the CSS preprocessor language <span class="text-c-first">SCSS</span>. The website also has features like themes, modal, mixitup, slider, and awesome scroll reveal effects for the contents to show on the scroll.
+                                </p>
+                            </div>
+                            <ul class="flex md:justify-end gap-x-6 mt-6 mb-3 brightness-150">
+                                <li class="fs-xm">JavaScript</li>
+                                <li class="fs-xm">Html5</li>
+                                <li class="fs-xm">CSS3</li>
+                                <li class="fs-xm">SCSS</li>
+                            </ul>
+                            <div class="flex md:justify-end gap-x-6 brightness-150">
+                                <a href="https://github.com/Rasan3-1416/Ansel-Klee" target="_blank">
+                                    <svg class="w-[22px] h-[22px]" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title><fontsninja-text id="fontsninja-text-232">GitHub</fontsninja-text></title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                </a>
+                                <a href="https://rasan3-1416.github.io/Ansel-Klee/" target="_blank">
+                                    <svg class="w-[22px] h-[22px]" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title><fontsninja-text id="fontsninja-text-236">External Link</fontsninja-text></title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-[1/-1] row-[1/-1] md:col-[1/8] z-10 h-full md:h-auto">
+                            <a href="https://rasan3-1416.github.io/Ansel-Klee/" target="_blank">
+                                <div class="container-after-overlay w-full h-full md:h-auto">
+                                    <img class="w-full h-full md:max-w-[600px] md:h-auto rounded-md object-cover shadow-dark" src="./src/img/featured-3.webp" alt="Featured Project - 1">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Work Section -->
+
     </main>
     <!-- End Main -->
 
