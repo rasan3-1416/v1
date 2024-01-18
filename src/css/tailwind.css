@@ -160,7 +160,7 @@
         }
     }
     .sub-section-heading {
-        @apply text-center mt-2 mb-10;
+        @apply text-center mt-2 mb-8;
         font-size: clamp(24px, 5vw, var(--fs-heading))
     }
     .content-title {
@@ -204,7 +204,7 @@
     .container-after-overlay {
         @apply relative hover:after:opacity-0;
         &::after {
-            @apply content-[''] absolute top-0 left-0 w-full h-full z-30 bg-c-container/75 rounded-md transe-ease;
+            @apply content-[''] absolute top-0 left-0 w-full h-full z-30 bg-c-container/95 md:bg-c-container/75 rounded-md transe-ease;
         }
     }
 }

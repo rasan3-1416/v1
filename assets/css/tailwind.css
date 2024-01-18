@@ -1012,7 +1012,7 @@ a:hover {
 
 .sub-section-heading {
   margin-top: 0.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   text-align: center;
   font-size: clamp(24px, 5vw, var(--fs-heading));
 }
@@ -1224,7 +1224,7 @@ a:hover {
     border-radius: 0.375rem;
   }
   &::after {
-    background-color: hsl(var(--container-color) / 0.75);
+    background-color: hsl(var(--container-color) / 0.95);
   }
   &::after {
     --tw-content: '';
@@ -1232,6 +1232,11 @@ a:hover {
   }
   &::after {
     transition: 0.3s ease-in-out;
+  }
+  @media (min-width: 768px) {
+    &::after {
+      background-color: hsl(var(--container-color) / 0.75);
+    }
   }
 }
 
@@ -1283,6 +1288,10 @@ a:hover {
   right: 2rem;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .top-6 {
   top: 1.5rem;
 }
@@ -1311,6 +1320,11 @@ a:hover {
   grid-row: 1/-1;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -1326,6 +1340,10 @@ a:hover {
 
 .mb-8 {
   margin-bottom: 2rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-6 {
@@ -1372,6 +1390,10 @@ a:hover {
   height: 2px;
 }
 
+.h-\[40px\] {
+  height: 40px;
+}
+
 .h-\[50px\] {
   height: 50px;
 }
@@ -1408,8 +1430,17 @@ a:hover {
   width: 23px;
 }
 
+.w-\[40px\] {
+  width: 40px;
+}
+
 .w-\[80\%\] {
   width: 80%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-full {
@@ -1448,6 +1479,10 @@ a:hover {
 
 .animate-scale-increase {
   animation: scaleIncrease 0.4s ease-in-out;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-cols-2 {
@@ -1496,6 +1531,16 @@ a:hover {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
 }
 
 .gap-x-4 {
@@ -1589,6 +1634,11 @@ a:hover {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .px-8 {
@@ -1781,6 +1831,11 @@ a:hover {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:-translate-y-2:hover {
+  --tw-translate-y: -0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:translate-y-\[-7px\]:hover {
   --tw-translate-y: -7px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1799,6 +1854,11 @@ a:hover {
 .group:hover .group-hover\:translate-y-\[-7px\] {
   --tw-translate-y: -7px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:text-c-first {
+  --tw-text-opacity: 1;
+  color: hsl(var(--first-color) / var(--tw-text-opacity));
 }
 
 .dynamic-style.dynamic-style\:visible {
@@ -1879,6 +1939,10 @@ a:hover {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .xm\:flex-col {
+    flex-direction: column;
+  }
+
   .xm\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1898,8 +1962,8 @@ a:hover {
     height: 50px;
   }
 
-  .sm\:max-h-\[2280px\] {
-    max-height: 2280px;
+  .sm\:max-h-\[280px\] {
+    max-height: 280px;
   }
 
   .sm\:w-\[2px\] {
@@ -1918,6 +1982,10 @@ a:hover {
     max-width: 250px;
   }
 
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1928,6 +1996,10 @@ a:hover {
 
   .sm\:flex-col {
     flex-direction: column;
+  }
+
+  .sm\:gap-\[5\%\] {
+    gap: 5%;
   }
 
   .sm\:border-b-0 {
@@ -1995,8 +2067,9 @@ a:hover {
     justify-content: flex-end;
   }
 
-  .md\:gap-\[5\%\] {
-    gap: 5%;
+  .md\:gap-x-5 {
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
   }
 
   .md\:gap-y-24 {
@@ -2043,6 +2116,10 @@ a:hover {
 }
 
 @media (min-width: 992px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }

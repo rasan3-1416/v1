@@ -102,3 +102,26 @@ function actionQueryTaker(actionElements, TargetElements, primeElement) {
 
 actionQueryTaker(servicesBtns,serviceModals)
 actionQueryTaker(serviceModalsCloseBtn,serviceModals)
+
+// Show More btn feature at Noteworthy project section
+const showMoreBtn = document.getElementById('show-more')
+const noteworthyProjects = document.getElementById('noteworthy-projects')
+const noteworthyProjectsCards = noteworthyProjects.querySelectorAll('#noteworthy-projects-card')
+let currentItem = 2
+
+noteworthyProjectsCards.forEach((element, index) => {
+    if(index > currentItem) {
+        element.style.display = 'none'
+    }
+})
+
+showMoreBtn.addEventListener('click', () => {
+    let cards = Array.from(noteworthyProjectsCards)
+    for(let i = currentItem; i < currentItem + 3; i++){
+        cards[i].style.display = 'inline-block';
+    }
+    currentItem += 3
+    if(currentItem >= cards.length){
+        showMoreBtn.style.display = 'none'
+    }
+})
