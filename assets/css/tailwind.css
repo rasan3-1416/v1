@@ -1493,6 +1493,10 @@ a:hover {
   grid-template-columns: repeat(12,1fr);
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .place-items-center {
   place-items: center;
 }
