@@ -1590,6 +1590,10 @@ a:hover {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .place-items-center {
   place-items: center;
 }
@@ -1660,6 +1664,11 @@ a:hover {
 
 .gap-y-6 {
   row-gap: 1.5rem;
+}
+
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
 }
 
 .overflow-hidden {
@@ -2252,6 +2261,10 @@ a:hover {
     --tw-shadow-colored: 0px 10px 20px var(--tw-shadow-color), 0px 6px 6px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
+
+  .md\:fs-xm {
+    font-size: var(--fs-xm);
+  }
 }
 
 @media (min-width: 992px) {
@@ -2265,6 +2278,11 @@ a:hover {
 
   .lg\:grid-cols-\[20\%\2c 75\%\] {
     grid-template-columns: 20% 75%;
+  }
+
+  .lg\:gap-x-5 {
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
   }
 }
 
