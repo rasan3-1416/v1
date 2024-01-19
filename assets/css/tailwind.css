@@ -1375,6 +1375,18 @@ a:hover {
   margin-bottom: 3rem;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .block {
   display: block;
 }
@@ -1425,6 +1437,30 @@ a:hover {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[8\] {
+  height: 8;
+}
+
+.h-\[80\] {
+  height: 80;
+}
+
+.h-\[80v\] {
+  height: 80v;
+}
+
+.h-\[80vw\] {
+  height: 80vw;
+}
+
+.h-\[80vh\] {
+  height: 80vh;
 }
 
 .max-h-\[230px\] {
@@ -2142,8 +2178,16 @@ a:hover {
     grid-column: 6/-1;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:block {
     display: block;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:hidden {
