@@ -62,6 +62,7 @@ module.exports = {
     screens: {
       // Custom Breakpoints
       'xm': {'max':'320px'},
+      'xm-400': {'max': '400px'},
       'sm': '576px',
       'md': '768px',
       'lg': '992px',

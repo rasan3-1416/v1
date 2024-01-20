@@ -79,8 +79,9 @@ skillsTabBtns.forEach((element, index) => {
 
 
 // Services Modal Feature
-const servicesBtns = document.querySelectorAll('#service-btn')
+const serviceBtns = document.querySelectorAll('#service-btn')
 const serviceModals = document.querySelectorAll('#service-modal')
+const serviceModalsCards = document.querySelectorAll('#service-modal-card')
 const serviceModalsCloseBtn = document.querySelectorAll('#service-modal-close')
 
 // A query function that goes through elements to execute the required action
@@ -100,7 +101,8 @@ function actionQueryTaker(actionElements, TargetElements, primeElement) {
     })
 }
 
-actionQueryTaker(servicesBtns,serviceModals)
+actionQueryTaker(serviceBtns,serviceModals)
+actionQueryTaker(serviceBtns, serviceModalsCards)
 actionQueryTaker(serviceModalsCloseBtn,serviceModals)
 
 // Show More btn feature at Noteworthy project section

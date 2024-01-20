@@ -128,7 +128,7 @@
     }
     /* Button Styles */
     .btn {
-        @apply font-mono fs-sm py-4 px-5 xm:py-3 xm:px-4 rounded-md
+        @apply font-mono fs-sm py-4 px-5 xm:py-3 xm:px-4 rounded-md inline-block
     }
     .btn-hollow {
         @apply border border-solid border-c-first text-c-first hover:bg-c-first/10;

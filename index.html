@@ -176,7 +176,10 @@
         <!-- Start Home Section -->
         <section class="min-h-[100vh] flex items-center pb-12" id="home">
             <div class="container relative -top-12 xm:-top-6 md:-top-0">
-                <span class="inline-block font-mono fs-lg text-c-first mb-4">Hi, my name is</span>
+                <!-- <span class="inline-block font-mono fs-lg text-c-first mb-4">Hi, my name is</span> -->
+                <span class="section-heading font-mono items-center fs-lg mb-4 text-c-first before:top-0 before:fs-md before:mr-2 after:hidden">
+                    Hi, my name is
+                </span>
                 <h1 class="fs-biggest leading-[1.2] mb-4">
                     <span class="inline-block">Md. Rakib Hasan</span>
                     <span class="inline-block text-c-prime-dark">I built thinks for the webs</span>
@@ -235,7 +238,7 @@
         <section class="section " id="skills">
             <div class="container">
                 <h2 class="section-heading">My Experience</h2>
-                <div class="grid sm:grid-cols-[25%,70%] lg:grid-cols-[20%,75%] gap-8 sm:gap-[5%]">
+                <div class="grid sm:grid-cols-[25%,73%] md:grid-cols-[25%,75%] lg:grid-cols-[20%,75%] gap-8 sm:gap-[2%] md:gap-[5%]">
                     <div class="sm:hidden flex justify-between">
                         <button type="button" class="font-mono fs-xm text-c-first after-arrow-left transe-ease opacity-0 dynamic-style:opacity-100" id="skills-left-scroll-notifier">Scroll more</button>
                         <button type="button" class="font-mono fs-xm text-c-first after-arrow-right transe-ease dynamic-style:opacity-0" id="skills-right-scroll-notifier">Scroll more</button>
@@ -249,32 +252,412 @@
                         <button class="font-mono fs-sm min-w-[120px] h-[50px] border-b-[2px] sm:border-b-0 sm:border-l-[2px] border-solid border-c-container transe-ease hover:bg-c-container hover:text-c-first dynamic-style:bg-c-container dynamic-style:text-c-first">Database</button>
                         <button class="font-mono fs-sm min-w-[120px] h-[50px] border-b-[2px] sm:border-b-0 sm:border-l-[2px] border-solid border-c-container transe-ease hover:bg-c-container hover:text-c-first dynamic-style:bg-c-container dynamic-style:text-c-first">UI/UX</button>
                         <button class="font-mono fs-sm min-w-[120px] h-[50px] border-b-[2px] sm:border-b-0 sm:border-l-[2px] border-solid border-c-container transe-ease hover:bg-c-container hover:text-c-first dynamic-style:bg-c-container dynamic-style:text-c-first">CMS</button>
+                        <button class="font-mono fs-sm min-w-[120px] h-[50px] border-b-[2px] sm:border-b-0 sm:border-l-[2px] border-solid border-c-container transe-ease hover:bg-c-container hover:text-c-first dynamic-style:bg-c-container dynamic-style:text-c-first">Tools</button>
                     </div>
                     <div class="" id="skills-body">
                         <!-- Front End Skills block -->
-                        <div class="w-full min-h-[350px] hidden dynamic-style:block animate-scale-increase dynamic-style" id="skills-body-block">1</div>
+                        <div class="hidden dynamic-style:block animate-scale-increase dynamic-style" id="skills-body-block">
+                            <div class="grid gap-y-4">
+                                <!-- HTML Skill -->
+                                <div class="grid grid-cols-[80px,1fr] grid-rows-[repeat(2,max-content)] gap-x-2 sm:gap-x-4">
+                                    <div class="col-[1/2] row-[1/-1] xm-400:row-[1/2]">
+                                        <img class="w-[80px] h-[80px]" src="./src/img/stack logo/html.webp" alt="HTML Logo">
+                                    </div>
+                                    <div class="col-[2/-1] row-[1/2]">
+                                        <h3 class="fs-md lg:fs-lg my-2">HTML [Hyper Text Markup Language]</h3>
+                                        <div class="fs-sm flex gap-x-2">
+                                            <span>Level:</span>
+                                            <span class="text-c-first">Master [91.35%]</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-[2/-1] row-[2/-1] xm-400:col-[1/-1] xm-400:row-[2/-1] mt-2 xm:hidden">
+                                        <ul class="flex fs-xxm text-center">
+                                            <li class="w-[20%]">Basic</li>
+                                            <li class="w-[20%]">Medium</li>
+                                            <li class="w-[20%]">Moderate</li>
+                                            <li class="w-[20%]">Advance</li>
+                                            <li class="w-[20%]">Expert</li>
+                                            <li class="w-[20%]">Master</li>
+                                        </ul>
+                                        <ul class="flex">
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] border border-solid border-c-container relative">
+                                                <span class="absolute top-0 left-0 inline-block w-[50%] h-full bg-c-first"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- CSS Skill -->
+                                <div class="grid grid-cols-[80px,1fr] grid-rows-[repeat(2,max-content)] gap-x-2 sm:gap-x-4">
+                                    <div class="col-[1/2] row-[1/-1] xm-400:row-[1/2]">
+                                        <img class="w-[80px] h-[80px]" src="./src/img/stack logo/css.webp" alt="CSS Logo">
+                                    </div>
+                                    <div class="col-[2/-1] row-[1/2]">
+                                        <h3 class="fs-md lg:fs-lg my-2">CSS [Cascading Style Sheets]</h3>
+                                        <div class="fs-sm flex gap-x-2">
+                                            <span>Level:</span>
+                                            <span class="text-c-first">Expert [84.95%]</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-[2/-1] row-[2/-1] xm-400:col-[1/-1] xm-400:row-[2/-1] mt-2 xm:hidden">
+                                        <ul class="flex fs-xxm text-center">
+                                            <li class="w-[20%]">Basic</li>
+                                            <li class="w-[20%]">Medium</li>
+                                            <li class="w-[20%]">Moderate</li>
+                                            <li class="w-[20%]">Advance</li>
+                                            <li class="w-[20%]">Expert</li>
+                                            <li class="w-[20%]">Master</li>
+                                        </ul>
+                                        <ul class="flex">
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] border border-solid border-c-container relative">
+                                                <span class="absolute top-0 left-0 inline-block w-[10%] h-full bg-c-first"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- CSS Framework Skill -->
+                                <div class="relative grid gap-y-4">
+                                    <span class="absolute top-0 left-0 text-[1.5rem] font-bold vertical-rl opacity-70">CSS Framework</span>
+                                    <!-- Tailwind CSS -->
+                                    <div class="grid grid-cols-[80px,1fr] grid-rows-[repeat(2,max-content)] gap-x-2 sm:gap-x-4">
+                                        <div class="col-[1/2] row-[1/-1] xm-400:row-[1/2]">
+                                            <img class="w-[80px] h-[80px]" src="./src/img/stack logo/tailwind.webp" alt="Tailwind CSS Logo">
+                                        </div>
+                                        <div class="col-[2/-1] row-[1/2]">
+                                            <h3 class="fs-md lg:fs-lg my-2">Tailwind CSS (Utility First CSS Framework)</h3>
+                                            <div class="fs-sm flex gap-x-2">
+                                                <span>Level:</span>
+                                                <span class="text-c-first">Expert [88.15%]</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-[2/-1] row-[2/-1] xm-400:col-[1/-1] xm-400:row-[2/-1] mt-2 xm:hidden">
+                                            <ul class="flex fs-xxm text-center">
+                                                <li class="w-[20%]">Basic</li>
+                                                <li class="w-[20%]">Medium</li>
+                                                <li class="w-[20%]">Moderate</li>
+                                                <li class="w-[20%]">Advance</li>
+                                                <li class="w-[20%]">Expert</li>
+                                                <li class="w-[20%]">Master</li>
+                                            </ul>
+                                            <ul class="flex">
+                                                <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                                <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                                <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                                <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                                <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                                <li class="w-[20%] h-[5px] border border-solid border-c-container relative">
+                                                    <span class="absolute top-0 left-0 inline-block w-[30%] h-full bg-c-first"></span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Bootstrap CSS -->
+                                    <div class="grid grid-cols-[80px,1fr] grid-rows-[repeat(2,max-content)] gap-x-2 sm:gap-x-4">
+                                        <div class="col-[1/2] row-[1/-1] xm-400:row-[1/2]">
+                                            <img class="w-[80px] h-[80px]" src="./src/img/stack logo/bootstrap.webp" alt="Bootstrap Logo">
+                                        </div>
+                                        <div class="col-[2/-1] row-[1/2]">
+                                            <h3 class="fs-md lg:fs-lg my-2">Boostrap (CSS Library Framework)</h3>
+                                            <div class="fs-sm flex gap-x-2">
+                                                <span>Level:</span>
+                                                <span class="text-c-first">Expert [83.35%]</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-[2/-1] row-[2/-1] xm-400:col-[1/-1] xm-400:row-[2/-1] mt-2 xm:hidden">
+                                            <ul class="flex fs-xxm text-center">
+                                                <li class="w-[20%]">Basic</li>
+                                                <li class="w-[20%]">Medium</li>
+                                                <li class="w-[20%]">Moderate</li>
+                                                <li class="w-[20%]">Advance</li>
+                                                <li class="w-[20%]">Expert</li>
+                                                <li class="w-[20%]">Master</li>
+                                            </ul>
+                                            <ul class="flex">
+                                                <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                                <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                                <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                                <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                                <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                                <li class="w-[20%] h-[5px] border border-solid border-c-container"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- SCSS Skill -->
+                                <div class="relative">
+                                    <span class="absolute top-0 left-0 text-[1rem] font-bold vertical-rl opacity-70">Preprocessor</span>
+                                    <div class="grid grid-cols-[80px,1fr] grid-rows-[repeat(2,max-content)] gap-x-2 sm:gap-x-4">
+                                        <div class="col-[1/2] row-[1/-1] xm-400:row-[1/2]">
+                                            <img class="w-[80px] h-[80px]" src="./src/img/stack logo/sass.webp" alt="SCSS Logo">
+                                        </div>
+                                        <div class="col-[2/-1] row-[1/2]">
+                                            <h3 class="fs-md lg:fs-lg my-2">SASS [Syntactically Awesome Style Sheets]</h3>
+                                            <div class="fs-sm flex gap-x-2">
+                                                <span>Level:</span>
+                                                <span class="text-c-first">Expert [83.35%]</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-[2/-1] row-[2/-1] xm-400:col-[1/-1] xm-400:row-[2/-1] mt-2 xm:hidden">
+                                            <ul class="flex fs-xxm text-center">
+                                                <li class="w-[20%]">Basic</li>
+                                                <li class="w-[20%]">Medium</li>
+                                                <li class="w-[20%]">Moderate</li>
+                                                <li class="w-[20%]">Advance</li>
+                                                <li class="w-[20%]">Expert</li>
+                                                <li class="w-[20%]">Master</li>
+                                            </ul>
+                                            <ul class="flex">
+                                                <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                                <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                                <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                                <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                                <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                                <li class="w-[20%] h-[5px] border border-solid border-c-container"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- JavaScript Skill -->
+                                <div class="grid grid-cols-[80px,1fr] grid-rows-[repeat(2,max-content)] gap-x-2 sm:gap-x-4">
+                                    <div class="col-[1/2] row-[1/-1] xm-400:row-[1/2]">
+                                        <img class="w-[80px] h-[80px]" src="./src/img/stack logo/javascript.webp" alt="JavaScript Logo">
+                                    </div>
+                                    <div class="col-[2/-1] row-[1/2]">
+                                        <h3 class="fs-md lg:fs-lg my-2">JavaScript (Programming Language)</h3>
+                                        <div class="fs-sm flex gap-x-2">
+                                            <span>Level:</span>
+                                            <span class="text-c-first">Advance [70%]</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-[2/-1] row-[2/-1] xm-400:col-[1/-1] xm-400:row-[2/-1] mt-2 xm:hidden">
+                                        <ul class="flex fs-xxm text-center">
+                                            <li class="w-[20%]">Basic</li>
+                                            <li class="w-[20%]">Medium</li>
+                                            <li class="w-[20%]">Moderate</li>
+                                            <li class="w-[20%]">Advance</li>
+                                            <li class="w-[20%]">Expert</li>
+                                            <li class="w-[20%]">Master</li>
+                                        </ul>
+                                        <ul class="flex">
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] border border-solid border-c-container relative">
+                                                <span class="absolute top-0 left-0 inline-block w-[20.75%] h-full bg-c-first"></span>
+                                            </li>
+                                            <li class="w-[20%] h-[5px] border border-solid border-c-container"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- Back End Skills block -->
                         <div class="relative w-full min-h-[350px] hidden dynamic-style:block animate-scale-increase" id="skills-body-block">
                             <div class="absolute h-full w-full flex justify-center items-center">
-                                <span class="fs-lg text-c-title">Yet to learn</span>
+                                <span class="text-[1.5rem] font-bold opacity-50 text-c-title">Yet to learn</span>
                             </div>
                         </div>
                         <!-- Versioning Skills block -->
-                        <div class="w-full min-h-[350px] hidden dynamic-style:block animate-scale-increase" id="skills-body-block">3</div>
+                        <div class="min-h-[350px] hidden dynamic-style:block animate-scale-increase" id="skills-body-block">
+                            <div class="grid gap-y-4">
+                                <!-- Git Skill -->
+                                <div class="grid grid-cols-[80px,1fr] grid-rows-[repeat(2,max-content)] gap-x-2 sm:gap-x-4">
+                                    <div class="col-[1/2] row-[1/-1] xm-400:row-[1/2]">
+                                        <img class="w-[80px] h-[80px]" src="./src/img/stack logo/git.webp" alt="Git Logo">
+                                    </div>
+                                    <div class="col-[2/-1] row-[1/2]">
+                                        <h3 class="fs-md lg:fs-lg my-2">Git (Version Control System)</h3>
+                                        <div class="fs-sm flex gap-x-2">
+                                            <span>Level:</span>
+                                            <span class="text-c-first">Advance [70%]</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-[2/-1] row-[2/-1] xm-400:col-[1/-1] xm-400:row-[2/-1] mt-2 xm:hidden">
+                                        <ul class="flex fs-xxm text-center">
+                                            <li class="w-[20%]">Basic</li>
+                                            <li class="w-[20%]">Medium</li>
+                                            <li class="w-[20%]">Moderate</li>
+                                            <li class="w-[20%]">Advance</li>
+                                            <li class="w-[20%]">Expert</li>
+                                            <li class="w-[20%]">Master</li>
+                                        </ul>
+                                        <ul class="flex">
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] border border-solid border-c-container relative">
+                                                <span class="absolute top-0 left-0 inline-block w-[20.75%] h-full bg-c-first"></span>
+                                            </li>
+                                            <li class="w-[20%] h-[5px] border border-solid border-c-container"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- Web Hosting Skills block -->
-                        <div class="w-full min-h-[350px] hidden dynamic-style:block animate-scale-increase" id="skills-body-block">4</div>
+                        <div class="min-h-[350px] hidden dynamic-style:block animate-scale-increase" id="skills-body-block">
+                            <!-- Github Skill -->
+                            <div class="grid grid-cols-[80px,1fr] grid-rows-[repeat(2,max-content)] gap-x-2 sm:gap-x-4">
+                                <div class="col-[1/2] row-[1/-1] xm-400:row-[1/2]">
+                                    <img class="w-[80px] h-[80px]" src="./src/img/stack logo/github.webp" alt="Github Logo">
+                                </div>
+                                <div class="col-[2/-1] row-[1/2]">
+                                    <h3 class="fs-md lg:fs-lg my-2">Github (Hosting Platform)</h3>
+                                    <div class="fs-sm flex gap-x-2">
+                                        <span>Level:</span>
+                                        <span class="text-c-first">Advance [70%]</span>
+                                    </div>
+                                </div>
+                                <div class="col-[2/-1] row-[2/-1] xm-400:col-[1/-1] xm-400:row-[2/-1] mt-2 xm:hidden">
+                                    <ul class="flex fs-xxm text-center">
+                                        <li class="w-[20%]">Basic</li>
+                                        <li class="w-[20%]">Medium</li>
+                                        <li class="w-[20%]">Moderate</li>
+                                        <li class="w-[20%]">Advance</li>
+                                        <li class="w-[20%]">Expert</li>
+                                        <li class="w-[20%]">Master</li>
+                                    </ul>
+                                    <ul class="flex">
+                                        <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                        <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                        <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                        <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                        <li class="w-[20%] h-[5px] border border-solid border-c-container relative">
+                                            <span class="absolute top-0 left-0 inline-block w-[20.75%] h-full bg-c-first"></span>
+                                        </li>
+                                        <li class="w-[20%] h-[5px] border border-solid border-c-container"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <!-- Database Skills block -->
                         <div class="relative w-full min-h-[350px] hidden dynamic-style:block animate-scale-increase" id="skills-body-block">
                             <div class="absolute h-full w-full flex justify-center items-center">
-                                <span class="fs-lg text-c-title">Yet to learn</span>
+                                <span class="text-[1.5rem] font-bold opacity-50 text-c-title">Yet to learn</span>
                             </div>
                         </div>
                         <!-- UI/UX Skills block -->
-                        <div class="w-full min-h-[350px] hidden dynamic-style:block animate-scale-increase" id="skills-body-block">6</div>
+                        <div class="w-full min-h-[350px] hidden dynamic-style:block animate-scale-increase" id="skills-body-block">
+                            <div class="grid gap-y-4">
+                                <!-- Figma Skill -->
+                                <div class="grid grid-cols-[80px,1fr] grid-rows-[repeat(2,max-content)] gap-x-2 sm:gap-x-4">
+                                    <div class="col-[1/2] row-[1/-1] xm-400:row-[1/2]">
+                                        <img class="w-[80px] h-[80px]" src="./src/img/stack logo/figma.webp" alt="Figma Logo">
+                                    </div>
+                                    <div class="col-[2/-1] row-[1/2]">
+                                        <h3 class="fs-md lg:fs-lg my-2">Figma (Collaborative Design Tool)</h3>
+                                        <div class="fs-sm flex gap-x-2">
+                                            <span>Level:</span>
+                                            <span class="text-c-first">Advance [70%]</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-[2/-1] row-[2/-1] xm-400:col-[1/-1] xm-400:row-[2/-1] mt-2 xm:hidden">
+                                        <ul class="flex fs-xxm text-center">
+                                            <li class="w-[20%]">Basic</li>
+                                            <li class="w-[20%]">Medium</li>
+                                            <li class="w-[20%]">Moderate</li>
+                                            <li class="w-[20%]">Advance</li>
+                                            <li class="w-[20%]">Expert</li>
+                                            <li class="w-[20%]">Master</li>
+                                        </ul>
+                                        <ul class="flex">
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] border border-solid border-c-container relative">
+                                                <span class="absolute top-0 left-0 inline-block w-[20.75%] h-full bg-c-first"></span>
+                                            </li>
+                                            <li class="w-[20%] h-[5px] border border-solid border-c-container"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Canva Skill -->
+                                <div class="grid grid-cols-[80px,1fr] grid-rows-[repeat(2,max-content)] gap-x-2 sm:gap-x-4">
+                                    <div class="col-[1/2] row-[1/-1] xm-400:row-[1/2]">
+                                        <img class="w-[80px] h-[80px]" src="./src/img/stack logo/canva.webp" alt="Canva Logo">
+                                    </div>
+                                    <div class="col-[2/-1] row-[1/2]">
+                                        <h3 class="fs-md lg:fs-lg my-2">Canva (Online Graphic Design Tool)</h3>
+                                        <div class="fs-sm flex gap-x-2">
+                                            <span>Level:</span>
+                                            <span class="text-c-first">Advance [70%]</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-[2/-1] row-[2/-1] xm-400:col-[1/-1] xm-400:row-[2/-1] mt-2 xm:hidden">
+                                        <ul class="flex fs-xxm text-center">
+                                            <li class="w-[20%]">Basic</li>
+                                            <li class="w-[20%]">Medium</li>
+                                            <li class="w-[20%]">Moderate</li>
+                                            <li class="w-[20%]">Advance</li>
+                                            <li class="w-[20%]">Expert</li>
+                                            <li class="w-[20%]">Master</li>
+                                        </ul>
+                                        <ul class="flex">
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                            <li class="w-[20%] h-[5px] border border-solid border-c-container relative">
+                                                <span class="absolute top-0 left-0 inline-block w-[20.75%] h-full bg-c-first"></span>
+                                            </li>
+                                            <li class="w-[20%] h-[5px] border border-solid border-c-container"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- CMS Skills block -->
                         <div class="relative w-full min-h-[350px] hidden dynamic-style:block animate-scale-increase" id="skills-body-block">
                             <div class="absolute h-full w-full flex justify-center items-center">
-                                <span class="fs-lg text-c-title">Yet to learn</span>
+                                <span class="text-[1.5rem] font-bold opacity-50 text-c-title">Yet to learn</span>
+                            </div>
+                        </div>
+                        <!-- Tool Skills block -->
+                        <div class="relative w-full min-h-[350px] hidden dynamic-style:block animate-scale-increase" id="skills-body-block">
+                            <!-- Npm Skill -->
+                            <div class="grid grid-cols-[80px,1fr] grid-rows-[repeat(2,max-content)] gap-x-2 sm:gap-x-4">
+                                <div class="col-[1/2] row-[1/-1] xm-400:row-[1/2]">
+                                    <img class="w-[80px] h-[80px]" src="./src/img/stack logo/npm.webp" alt="Npm Logo">
+                                </div>
+                                <div class="col-[2/-1] row-[1/2]">
+                                    <h3 class="fs-md lg:fs-lg my-2">Npm (Node Package Manager)</h3>
+                                    <div class="fs-sm flex gap-x-2">
+                                        <span>Level:</span>
+                                        <span class="text-c-first">Advance [70%]</span>
+                                    </div>
+                                </div>
+                                <div class="col-[2/-1] row-[2/-1] xm-400:col-[1/-1] xm-400:row-[2/-1] mt-2 xm:hidden">
+                                    <ul class="flex fs-xxm text-center">
+                                        <li class="w-[20%]">Basic</li>
+                                        <li class="w-[20%]">Medium</li>
+                                        <li class="w-[20%]">Moderate</li>
+                                        <li class="w-[20%]">Advance</li>
+                                        <li class="w-[20%]">Expert</li>
+                                        <li class="w-[20%]">Master</li>
+                                    </ul>
+                                    <ul class="flex">
+                                        <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                        <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                        <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                        <li class="w-[20%] h-[5px] bg-c-first border border-solid border-c-container"></li>
+                                        <li class="w-[20%] h-[5px] border border-solid border-c-container relative">
+                                            <span class="absolute top-0 left-0 inline-block w-[20.75%] h-full bg-c-first"></span>
+                                        </li>
+                                        <li class="w-[20%] h-[5px] border border-solid border-c-container"></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -312,8 +695,8 @@
                 </div>
                 <div>
                     <!-- Service Modal - 1 -->
-                    <div class="fixed inset-0 z-modal grid place-items-center bg-[hsla(var(--second-hue),28%,16%,0.7)] px-4 py-8 invisible opacity-0 transe-ease dynamic-style:visible dynamic-style:opacity-100" id="service-modal">
-                        <div class="relative sm:w-[500px] bg-c-container pt-16 pb-10 px-6 sm:px-10 rounded-md shadow-dark">
+                    <div class="fixed inset-0 z-modal grid place-items-center bg-[hsla(var(--second-hue),28%,16%,0.7)] px-4 py-8 invisible opacity-0 transe-ease dynamic-style:visible dynamic-style:opacity-100 group" id="service-modal">
+                        <div class="relative sm:w-[500px] bg-c-container pt-16 pb-10 px-6 sm:px-10 rounded-md shadow-dark dynamic-style:animate-scale-increase" id="service-modal-card">
                             <button class="absolute top-6 right-6 text-c-body transe-ease hover:text-c-first" type="button" id="service-modal-close">
                                 <svg class="w-[20px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                             </button>
@@ -322,19 +705,19 @@
                                 Get your design converted to HTML5 with cross-platform CSS support. Each site is built with a mobile-first approach for the best responsiveness.
                             </p>
                             <p class="fs-md mb-3">What you will get:</p>
-                            <ul class="grid gap-y-3">
-                                <li class="fs-md after-arrow-first">PSD/Figma/XD/Sketch to HTML5</li>
-                                <li class="fs-md after-arrow-first">Cross-platform CSS support.</li>
-                                <li class="fs-md after-arrow-first">Clean and structured code base.</li>
-                                <li class="fs-md after-arrow-first">Optimized image for better load timing.</li>
-                                <li class="fs-md after-arrow-first">Mobile-first layout approach for best responsiveness.</li>
-                                <li class="fs-md after-arrow-first">W3C Validations</li>
+                            <ul class="fs-md grid gap-y-3">
+                                <li class="after-arrow-first">PSD/Figma/XD/Sketch to HTML5</li>
+                                <li class="after-arrow-first">Cross-platform CSS support.</li>
+                                <li class="after-arrow-first">Clean and structured code base.</li>
+                                <li class="after-arrow-first">Optimized image for better load timing.</li>
+                                <li class="after-arrow-first">Mobile-first layout approach for best responsiveness.</li>
+                                <li class="after-arrow-first">W3C Validations</li>
                             </ul>
                         </div>
                     </div>
                     <!-- Service Modal - 2 -->
                     <div class="fixed inset-0 z-modal grid place-items-center bg-[hsla(var(--second-hue),28%,16%,0.7)] px-4 py-8 invisible opacity-0 transe-ease dynamic-style:visible dynamic-style:opacity-100" id="service-modal">
-                        <div class="relative sm:w-[500px] bg-c-container pt-16 pb-10 px-6 sm:px-10 rounded-md shadow-dark">
+                        <div class="relative sm:w-[500px] bg-c-container pt-16 pb-10 px-6 sm:px-10 rounded-md shadow-dark dynamic-style:animate-scale-increase" id="service-modal-card">
                             <button class="absolute top-6 right-6 text-c-body transe-ease hover:text-c-first" type="button" id="service-modal-close">
                                 <svg class="w-[20px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                             </button>
@@ -343,19 +726,19 @@
                                 Get your design converted to HTML5 with cross-platform CSS support. Each site is built with a mobile-first approach for the best responsiveness.
                             </p>
                             <p class="fs-md mb-3">What you will get:</p>
-                            <ul class="grid gap-y-3">
-                                <li class="fs-md after-arrow-first">PSD/Figma/XD/Sketch to HTML5</li>
-                                <li class="fs-md after-arrow-first">Cross-platform CSS support.</li>
-                                <li class="fs-md after-arrow-first">Clean and structured code base.</li>
-                                <li class="fs-md after-arrow-first">Optimized image for better load timing.</li>
-                                <li class="fs-md after-arrow-first">Mobile-first layout approach for best responsiveness.</li>
-                                <li class="fs-md after-arrow-first">W3C Validations</li>
+                            <ul class="fs-md grid gap-y-3">
+                                <li class="after-arrow-first">PSD/Figma/XD/Sketch to HTML5</li>
+                                <li class="after-arrow-first">Cross-platform CSS support.</li>
+                                <li class="after-arrow-first">Clean and structured code base.</li>
+                                <li class="after-arrow-first">Optimized image for better load timing.</li>
+                                <li class="after-arrow-first">Mobile-first layout approach for best responsiveness.</li>
+                                <li class="after-arrow-first">W3C Validations</li>
                             </ul>
                         </div>
                     </div>
                     <!-- Service Modal - 3 -->
                     <div class="fixed inset-0 z-modal grid place-items-center bg-[hsla(var(--second-hue),28%,16%,0.7)] px-4 py-8 invisible opacity-0 transe-ease dynamic-style:visible dynamic-style:opacity-100" id="service-modal">
-                        <div class="relative sm:w-[500px] bg-c-container pt-16 pb-10 px-6 sm:px-10 rounded-md shadow-dark">
+                        <div class="relative sm:w-[500px] bg-c-container pt-16 pb-10 px-6 sm:px-10 rounded-md shadow-dark dynamic-style:animate-scale-increase" id="service-modal-card">
                             <button class="absolute top-6 right-6 text-c-body transe-ease hover:text-c-first" type="button" id="service-modal-close">
                                 <svg class="w-[20px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                             </button>
@@ -364,19 +747,19 @@
                                 Get your design converted to HTML5 with cross-platform CSS support. Each site is built with a mobile-first approach for the best responsiveness.
                             </p>
                             <p class="fs-md mb-3">What you will get:</p>
-                            <ul class="grid gap-y-3">
-                                <li class="fs-md after-arrow-first">PSD/Figma/XD/Sketch to HTML5</li>
-                                <li class="fs-md after-arrow-first">Cross-platform CSS support.</li>
-                                <li class="fs-md after-arrow-first">Clean and structured code base.</li>
-                                <li class="fs-md after-arrow-first">Optimized image for better load timing.</li>
-                                <li class="fs-md after-arrow-first">Mobile-first layout approach for best responsiveness.</li>
-                                <li class="fs-md after-arrow-first">W3C Validations</li>
+                            <ul class="fs-md grid gap-y-3">
+                                <li class="after-arrow-first">PSD/Figma/XD/Sketch to HTML5</li>
+                                <li class="after-arrow-first">Cross-platform CSS support.</li>
+                                <li class="after-arrow-first">Clean and structured code base.</li>
+                                <li class="after-arrow-first">Optimized image for better load timing.</li>
+                                <li class="after-arrow-first">Mobile-first layout approach for best responsiveness.</li>
+                                <li class="after-arrow-first">W3C Validations</li>
                             </ul>
                         </div>
                     </div>
                     <!-- Service Modal - 4 -->
                     <div class="fixed inset-0 z-modal grid place-items-center bg-[hsla(var(--second-hue),28%,16%,0.7)] px-4 py-8 invisible opacity-0 transe-ease dynamic-style:visible dynamic-style:opacity-100" id="service-modal">
-                        <div class="relative sm:w-[500px] bg-c-container pt-16 pb-10 px-6 sm:px-10 rounded-md shadow-dark">
+                        <div class="relative sm:w-[500px] bg-c-container pt-16 pb-10 px-6 sm:px-10 rounded-md shadow-dark dynamic-style:animate-scale-increase" id="service-modal-card">
                             <button class="absolute top-6 right-6 text-c-body transe-ease hover:text-c-first" type="button" id="service-modal-close">
                                 <svg class="w-[20px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                             </button>
@@ -385,13 +768,13 @@
                                 Get your design converted to HTML5 with cross-platform CSS support. Each site is built with a mobile-first approach for the best responsiveness.
                             </p>
                             <p class="fs-md mb-3">What you will get:</p>
-                            <ul class="grid gap-y-3">
-                                <li class="fs-md after-arrow-first">PSD/Figma/XD/Sketch to HTML5</li>
-                                <li class="fs-md after-arrow-first">Cross-platform CSS support.</li>
-                                <li class="fs-md after-arrow-first">Clean and structured code base.</li>
-                                <li class="fs-md after-arrow-first">Optimized image for better load timing.</li>
-                                <li class="fs-md after-arrow-first">Mobile-first layout approach for best responsiveness.</li>
-                                <li class="fs-md after-arrow-first">W3C Validations</li>
+                            <ul class="fs-md grid gap-y-3">
+                                <li class="after-arrow-first">PSD/Figma/XD/Sketch to HTML5</li>
+                                <li class="after-arrow-first">Cross-platform CSS support.</li>
+                                <li class="after-arrow-first">Clean and structured code base.</li>
+                                <li class="after-arrow-first">Optimized image for better load timing.</li>
+                                <li class="after-arrow-first">Mobile-first layout approach for best responsiveness.</li>
+                                <li class="after-arrow-first">W3C Validations</li>
                             </ul>
                         </div>
                     </div>
@@ -417,11 +800,11 @@
                                     Blackjack is a web game that uses <span class="text-c-first">JavaScript</span>. You will be playing against a bot and your goal is to score higher than the bot, but not go over a certain number. The game will provide you with rules to follow.
                                 </p>
                             </div>
-                            <ul class="flex md:justify-end gap-x-3 md:gap-x-5 mt-6 mb-3 brightness-150">
-                                <li class="fs-xm">JavaScript</li>
-                                <li class="fs-xm">Html5</li>
-                                <li class="fs-xm">CSS3</li>
-                                <li class="fs-xm">SCSS</li>
+                            <ul class="fs-xm flex flex-wrap md:justify-end gap-x-3 md:gap-x-5 mt-6 mb-3 brightness-150">
+                                <li>JavaScript</li>
+                                <li>Html5</li>
+                                <li>CSS3</li>
+                                <li>SCSS</li>
                             </ul>
                             <div class="flex md:justify-end gap-x-6 mt-4 brightness-150">
                                 <a href="https://github.com/Rasan3-1416/Blackjack-game" target="_blank">
@@ -452,11 +835,11 @@
                                     Rolex is a brand-focused e-commerce website built using the best CSS framework, <span class="text-c-first">Tailwind CSS</span>. The site has dark and light themes, along with a cart option. Multiple product sliders are available to display products.
                                 </p>
                             </div>
-                            <ul class="flex gap-x-3 md:gap-x-5 mt-6 mb-3 brightness-150">
-                                <li class="fs-xm">Html5</li>
-                                <li class="fs-xm">CSS3</li>
-                                <li class="fs-xm">Tailwind CSS</li>
-                                <li class="fs-xm">JavaScript</li>
+                            <ul class="fs-xm flex flex-wrap gap-x-3 md:gap-x-5 mt-6 mb-3 brightness-150">
+                                <li>Html5</li>
+                                <li>CSS3</li>
+                                <li>Tailwind CSS</li>
+                                <li>JavaScript</li>
                             </ul>
                             <div class="flex gap-x-6 mt-4 brightness-150">
                                 <a href="https://github.com/Rasan3-1416/Rolex-ecomerce-site" target="_blank">
@@ -487,11 +870,11 @@
                                     Ansel Klee, it's a portfolio website built using the CSS preprocessor language <span class="text-c-first">SCSS</span>. The website also has features like themes, modal, mixitup, slider, and awesome scroll reveal effects for the contents to show on the scroll.
                                 </p>
                             </div>
-                            <ul class="flex md:justify-end gap-x-3 md:gap-x-5 mt-6 mb-3 brightness-150">
-                                <li class="fs-xm">JavaScript</li>
-                                <li class="fs-xm">Html5</li>
-                                <li class="fs-xm">CSS3</li>
-                                <li class="fs-xm">SCSS</li>
+                            <ul class="fs-xm flex flex-wrap md:justify-end gap-x-3 md:gap-x-5 mt-6 mb-3 brightness-150">
+                                <li>JavaScript</li>
+                                <li>Html5</li>
+                                <li>CSS3</li>
+                                <li>SCSS</li>
                             </ul>
                             <div class="flex md:justify-end gap-x-6 mt-4 brightness-150">
                                 <a href="https://github.com/Rasan3-1416/Ansel-Klee" target="_blank">
