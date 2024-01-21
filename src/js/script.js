@@ -39,12 +39,13 @@ skillsRightScrollNotifier.addEventListener('click', () => {
 
 skillsTab.addEventListener('scroll', () => {
     let xScroll = skillsTab.scrollLeft
+    console.log(xScroll)
     if(xScroll > 150) {
         skillsLeftScrollNotifier.classList.add('dynamic-style')
     }else {
         skillsLeftScrollNotifier.classList.remove('dynamic-style')
     }
-    if(xScroll > 500) { 
+    if(xScroll > 600) { 
         skillsRightScrollNotifier.classList.add('dynamic-style')
     }else {
         skillsRightScrollNotifier.classList.remove('dynamic-style')
