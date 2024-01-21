@@ -3,10 +3,10 @@ const body = document.querySelector('body')
 const header = document.getElementById('header')
 
 
-// Scroll Action Function
+// Header scroll action feature
 let lastScrolled = 0
 function scrollAction() {
-    let newScrolled = window.pageYOffset || document.documentElement.newScrolled
+    let newScrolled = window.scrollY || document.documentElement.newScrolled
     if(window.scrollY === 0) {
         header.classList.remove('dynamic-style')
     }else if(newScrolled > lastScrolled) {
@@ -128,3 +128,28 @@ showMoreBtn.addEventListener('click', () => {
         showMoreBtn.style.display = 'none'
     }
 })
+
+// Scroll section active link feature
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive() {
+    const yScroll = window.scrollY
+    
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight,
+              sectionTop = current.offsetTop - 58,
+              sectionId = current.getAttribute('id'),
+              desktopScrolledTo = document.querySelector(`#desktop-menu a[href*=${sectionId}]`),
+              mobileScrolledTo = document.querySelector(`#mobile-menu a[href*=${sectionId}]`)
+
+        if(yScroll > sectionTop && yScroll <= sectionTop + sectionHeight) {
+            desktopScrolledTo.classList.add('dynamic-style')
+            mobileScrolledTo.classList.add('dynamic-style')
+        }else {
+            desktopScrolledTo.classList.remove('dynamic-style')
+            mobileScrolledTo.classList.remove('dynamic-style')
+        }
+    })
+}
+
+window.addEventListener('scroll', scrollActive)

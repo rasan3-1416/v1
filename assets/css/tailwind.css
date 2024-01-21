@@ -1301,6 +1301,22 @@ a:hover {
   top: 1.5rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.top-12 {
+  top: 3rem;
+}
+
+.-top-1 {
+  top: -0.25rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1391,6 +1407,22 @@ a:hover {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .block {
@@ -1692,6 +1724,11 @@ a:hover {
   row-gap: 1.5rem;
 }
 
+.gap-x-\[5\%\] {
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1810,6 +1847,14 @@ a:hover {
 
 .pt-16 {
   padding-top: 4rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .text-center {
@@ -2150,6 +2195,18 @@ a:hover {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .xm\:pt-12 {
+    padding-top: 3rem;
+  }
+
+  .xm\:pt-1 {
+    padding-top: 0.25rem;
+  }
+
+  .xm\:pt-16 {
+    padding-top: 4rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -2169,6 +2226,10 @@ a:hover {
 @media (min-width: 576px) {
   .sm\:top-0 {
     top: 0px;
+  }
+
+  .sm\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .sm\:hidden {
@@ -2224,6 +2285,11 @@ a:hover {
          column-gap: 1rem;
   }
 
+  .sm\:gap-x-\[2\%\] {
+    -moz-column-gap: 2%;
+         column-gap: 2%;
+  }
+
   .sm\:border-b-0 {
     border-bottom-width: 0px;
   }
@@ -2245,6 +2311,10 @@ a:hover {
   .sm\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .sm\:pb-0 {
+    padding-bottom: 0px;
   }
 }
 
@@ -2271,6 +2341,10 @@ a:hover {
 
   .md\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
   }
 
   .md\:block {
@@ -2356,6 +2430,11 @@ a:hover {
 
   .md\:gap-y-24 {
     row-gap: 6rem;
+  }
+
+  .md\:gap-x-\[5\%\] {
+    -moz-column-gap: 5%;
+         column-gap: 5%;
   }
 
   .md\:rounded-md {
