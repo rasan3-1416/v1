@@ -153,3 +153,51 @@ function scrollActive() {
 }
 
 window.addEventListener('scroll', scrollActive)
+
+// Scroll reveal animation feature
+
+// Basic Scroll reveal function
+const sr = ScrollReveal({
+    origin: 'bottom',
+    distance: '60px',
+    duration: 2500,
+    delay: 100,
+    interval: 0,
+    viewFactor: 0.25,
+    // reset: true,
+})
+
+// Core function
+function srAction(element, action){
+    sr.reveal(element, action)
+}
+
+// Delay increase According to Index Function
+let actionByIndex = function(value){
+    let elements = value.elements
+    let direction = value.origin || 'bottom'
+    elements.forEach((element,index) => {
+        let delayTiming = value.delay + (index * 100) || 100 + (index * 100)
+        srAction(element, {origin: direction, delay: delayTiming})
+    })
+}
+
+let desktopMenu = document.querySelectorAll('#desktop-menu li')
+let mobileMenu = document.getElementById('mobile-menu')
+let homeElements = document.getElementById('home-container').querySelectorAll('span:not(.avoid-el), p, div')
+let serviceCards = document.getElementById('service-cards').querySelectorAll('div')
+let featuredProjects = document.querySelectorAll('#featured-project')
+
+if(viewportWidth > 767.99) {
+    actionByIndex({elements: desktopMenu, origin: 'top'})
+    srAction('#left-side-social', {origin: 'left', delay: 2800})
+    srAction('#right-side-mail', {origin: 'right', delay: 2800})
+}else {
+    srAction(header, {origin: 'top'})
+    srAction(mobileMenu, {delay: 2800})
+}
+actionByIndex({elements: homeElements, delay: 1000})
+srAction('#about, #skills, #noteworthy-projects, #contact, #footer')
+actionByIndex({elements: serviceCards})
+actionByIndex({elements: featuredProjects})
+// actionByIndex({elements: noteworthyProjectsCards})
