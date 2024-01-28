@@ -19,16 +19,34 @@ module.exports = {
         'tooltip': 100,
         'fixed': 200,
         'modal': 1000,
+        'preloader': 2000,
       },
       // Custom Animation
       keyframes: {
-        scaleIncrease: {
+        'scaleIncrease': {
           '0%': {transform: 'scale(0.9)'},
           '100%': {transform: 'scale(1.0)'}
         },
+        'rotationClock': {
+          '0%': {transform: 'rotate(0deg)'},
+          '100%': {transform: 'rotate(360deg)'},
+        },
+        'rotationAntiClock': {
+          '0%': {transform: 'rotate(360deg)'},
+          '100%': {transform: 'rotate(0deg)'},
+        },
+        'vanish': {
+          '100%': {
+            visibility: 'hidden',
+            opacity: 0,
+          }
+        }
       },
       animation: {
-        'scale-increase': 'scaleIncrease 0.4s ease-in-out'
+        'scale-increase': 'scaleIncrease 0.4s ease-in-out',
+        'rotationClock': 'rotationClock 7s linear infinite',
+        'rotationAntiClock': 'rotationAntiClock 7s linear infinite',
+        'disappear': 'vanish 1s forwards'
       },
       // Initial value for width height and spacing
       width: {

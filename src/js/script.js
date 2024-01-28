@@ -2,6 +2,13 @@ const viewportWidth = window.visualViewport.width
 const body = document.querySelector('body')
 const header = document.getElementById('header')
 
+// Prelader Feature
+const preloader = document.getElementById('preloader')
+
+let loader = setTimeout(() => {
+    preloader.classList.add('dynamic-style')
+}, 2000)
+
 
 // Header scroll action feature
 let lastScrolled = 0

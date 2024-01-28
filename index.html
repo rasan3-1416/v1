@@ -12,6 +12,16 @@
     <link rel="stylesheet" href="./assets/css/tailwind.css">
 </head>
 <body class="dynamic-style:overflow-hidden">
+    <!-- Start Preloader -->
+    <div class="fixed z-preloader w-full h-full flex justify-center items-center bg-c-body dynamic-style:animate-disappear" id="preloader">
+        <div class="relative w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] flex justify-center items-center">
+            <div class="absolute top-0 left-0 w-full h-full border-2 border-solid border-c-first animate-rotationClock"></div>
+            <div class="absolute top-0 left-0 w-full h-full border-2 border-solid border-c-first rotate-45 animate-rotationAntiClock"></div>
+            <span class="text-[3.5rem] sm:text-[4.5rem] font-bold text-c-first">R</span>
+        </div>
+    </div>
+    <!-- End Preloader -->
+
     <!-- Start Header -->
     <header class="fixed w-full left-0 right-0 top-0 dynamic-style:bg-c-body dynamic-style:shadow-dark dynamic-style:z-fixed transe-ease-l" id="header">
         <nav class="max-w-[1250px] px-4 sm:px-6 md:px-8 xxl:mx-auto">
