@@ -1,32 +1,15 @@
-const viewportWidth = window.visualViewport.width
-const body = document.querySelector('body')
-const header = document.getElementById('header')
+// Common Variables
+import { viewportWidth, header } from './commonVar.js'
+// Utility Functions
+import { displacement, actionQueryTaker } from './utility.js'
+// Imports refreshed scrolled top, preloader and header scrolling action
+import * as commonFeatures from './commonFeatures.js'
 
-// Prelader Feature
-const preloader = document.getElementById('preloader')
+// Scrolled to the top on refresh
+window.addEventListener('load', commonFeatures.refreshedTop)
 
-let loader = setTimeout(() => {
-    preloader.classList.add('dynamic-style')
-}, 2000)
-
-
-// Header scroll action feature
-let lastScrolled = 0
-function scrollAction() {
-    let newScrolled = window.scrollY || document.documentElement.newScrolled
-    if(window.scrollY === 0) {
-        header.classList.remove('dynamic-style')
-    }else if(newScrolled > lastScrolled) {
-        header.classList.add('dynamic-style')
-        header.style.top = '-7rem'
-    }else if(newScrolled < lastScrolled) {
-        header.style.top = '0'
-    }
-    lastScrolled = newScrolled
-}
-
-window.addEventListener('scroll', scrollAction)
-
+// Scrolled Feature
+window.addEventListener('scroll', commonFeatures.scrollAction)
 
 // Skills Table Feature
 const skillsTab = document.getElementById('skills-tab')
@@ -46,7 +29,6 @@ skillsRightScrollNotifier.addEventListener('click', () => {
 
 skillsTab.addEventListener('scroll', () => {
     let xScroll = skillsTab.scrollLeft
-    console.log(xScroll)
     if(xScroll > 150) {
         skillsLeftScrollNotifier.classList.add('dynamic-style')
     }else {
@@ -58,13 +40,6 @@ skillsTab.addEventListener('scroll', () => {
         skillsRightScrollNotifier.classList.remove('dynamic-style')
     }
 })
-
-// A function that moves a class between elements
-function displacement(elementRemove, elementAdd, desiredClass) {
-    desiredClass = desiredClass || 'dynamic-style'
-    elementRemove.classList.remove(desiredClass)
-    elementAdd.classList.add(desiredClass)
-}
 
 skillsTabBtns.forEach((element, index) => {
     element.addEventListener('click', () => {
@@ -84,30 +59,11 @@ skillsTabBtns.forEach((element, index) => {
     
 });
 
-
-
 // Services Modal Feature
 const serviceBtns = document.querySelectorAll('#service-btn')
 const serviceModals = document.querySelectorAll('#service-modal')
 const serviceModalsCards = document.querySelectorAll('#service-modal-card')
 const serviceModalsCloseBtn = document.querySelectorAll('#service-modal-close')
-
-// A query function that goes through elements to execute the required action
-function actionQueryTaker(actionElements, TargetElements, primeElement) {
-    primeElement = primeElement || body
-    actionElements.forEach((element,index) => {
-        element.addEventListener('click', () => {
-            let activeElement = TargetElements[index]
-            if(!activeElement.classList.contains('dynamic-style')){
-                activeElement.classList.add('dynamic-style')
-                primeElement.classList.add('dynamic-style')
-            }else {
-                activeElement.classList.remove('dynamic-style')
-                primeElement.classList.remove('dynamic-style')
-            } 
-        })
-    })
-}
 
 actionQueryTaker(serviceBtns,serviceModals)
 actionQueryTaker(serviceBtns, serviceModalsCards)
@@ -196,15 +152,21 @@ let serviceCards = document.getElementById('service-cards').querySelectorAll('di
 let featuredProjects = document.querySelectorAll('#featured-project')
 
 if(viewportWidth > 767.99) {
-    actionByIndex({elements: desktopMenu, origin: 'top'})
-    srAction('#left-side-social', {origin: 'left', delay: 2800})
-    srAction('#right-side-mail', {origin: 'right', delay: 2800})
+    actionByIndex({elements: desktopMenu, origin: 'top', delay: 1000})
+    srAction('#left-side-social', {origin: 'left', delay: 3200})
+    srAction('#right-side-mail', {origin: 'right', delay: 3200})
 }else {
     srAction(header, {origin: 'top'})
-    srAction(mobileMenu, {delay: 2800})
+    srAction(mobileMenu, {delay: 3200})
 }
-actionByIndex({elements: homeElements, delay: 1000})
+actionByIndex({elements: homeElements, delay: 2500})
 srAction('#about, #skills, #noteworthy-projects, #contact, #footer')
 actionByIndex({elements: serviceCards})
 actionByIndex({elements: featuredProjects})
 // actionByIndex({elements: noteworthyProjectsCards})
+
+
+
+
+
+

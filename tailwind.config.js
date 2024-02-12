@@ -4,7 +4,7 @@ const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   content: [
-    './index.html',
+    './*.html',
   ],
   darkMode: 'class',
   theme: {
@@ -40,13 +40,19 @@ module.exports = {
             visibility: 'hidden',
             opacity: 0,
           }
+        },
+        'scaleErase': {
+          '100%': {
+            transform: 'scale(0)'
+          }
         }
       },
       animation: {
         'scale-increase': 'scaleIncrease 0.4s ease-in-out',
         'rotationClock': 'rotationClock 7s linear infinite',
         'rotationAntiClock': 'rotationAntiClock 7s linear infinite',
-        'disappear': 'vanish 1s forwards'
+        'disappear': 'vanish 1s forwards',
+        'scaleDisapper': 'scaleErase 1s forwards'
       },
       // Initial value for width height and spacing
       width: {
@@ -119,6 +125,13 @@ module.exports = {
           '@screen md': {paddingLeft: '5rem', paddingRight: '5rem'},
           '@screen lg': {paddingLeft: '6rem', paddingRight: '6rem'},
           '@screen xl': {paddingLeft: '8rem', paddingRight: '8rem'},
+          '@screen xxl': {marginLeft: 'auto', marginRight: 'auto'},
+        },
+        '.container-lg': {
+          maxWidth: '1300px', paddingLeft: '1.5rem', paddingRight: '1.5rem',
+          '@screen md': {paddingLeft: '4rem', paddingRight: '4rem'},
+          '@screen lg': {paddingLeft: '5rem', paddingRight: '5rem'},
+          '@screen xl': {paddingLeft: '6rem', paddingRight: '6rem'},
           '@screen xxl': {marginLeft: 'auto', marginRight: 'auto'},
         },
         // Custom Utility Classes
