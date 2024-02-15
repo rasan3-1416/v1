@@ -1,15 +1,15 @@
 // Common Variables
-import { viewportWidth, header } from './commonVar.js'
+import { viewportWidth, header, desktopMenu, mobileMenu } from './commonVar.js'
 // Utility Functions
 import { displacement, actionQueryTaker } from './utility.js'
 // Imports refreshed scrolled top, preloader and header scrolling action
-import * as commonFeatures from './commonFeatures.js'
+import * as commonFeat from './commonFeat.js'
 
 // Scrolled to the top on refresh
-window.addEventListener('load', commonFeatures.refreshedTop)
+window.addEventListener('load', commonFeat.refreshedTop)
 
 // Scrolled Feature
-window.addEventListener('scroll', commonFeatures.scrollAction)
+window.addEventListener('scroll', commonFeat.scrollAction)
 
 // Skills Table Feature
 const skillsTab = document.getElementById('skills-tab')
@@ -118,52 +118,24 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive)
 
 // Scroll reveal animation feature
-
-// Basic Scroll reveal function
-const sr = ScrollReveal({
-    origin: 'bottom',
-    distance: '60px',
-    duration: 2500,
-    delay: 100,
-    interval: 0,
-    viewFactor: 0.25,
-    // reset: true,
-})
-
-// Core function
-function srAction(element, action){
-    sr.reveal(element, action)
-}
-
-// Delay increase According to Index Function
-let actionByIndex = function(value){
-    let elements = value.elements
-    let direction = value.origin || 'bottom'
-    elements.forEach((element,index) => {
-        let delayTiming = value.delay + (index * 100) || 100 + (index * 100)
-        srAction(element, {origin: direction, delay: delayTiming})
-    })
-}
-
-let desktopMenu = document.querySelectorAll('#desktop-menu li')
-let mobileMenu = document.getElementById('mobile-menu')
 let homeElements = document.getElementById('home-container').querySelectorAll('span:not(.avoid-el), p, div')
 let serviceCards = document.getElementById('service-cards').querySelectorAll('div')
 let featuredProjects = document.querySelectorAll('#featured-project')
 
 if(viewportWidth > 767.99) {
-    actionByIndex({elements: desktopMenu, origin: 'top', delay: 1000})
-    srAction('#left-side-social', {origin: 'left', delay: 3200})
-    srAction('#right-side-mail', {origin: 'right', delay: 3200})
+    commonFeat.actionByIndex({elements: desktopMenu, origin: 'top', delay: 1500})
+    commonFeat.srAction('#left-side-social', {origin: 'left', delay: 4500})
+    commonFeat.srAction('#right-side-mail', {origin: 'right', delay: 4500})
 }else {
-    srAction(header, {origin: 'top'})
-    srAction(mobileMenu, {delay: 3200})
+    commonFeat.srAction(header, {origin: 'top'})
+    commonFeat.srAction(mobileMenu, {delay: 4500})
 }
-actionByIndex({elements: homeElements, delay: 2500})
-srAction('#about, #skills, #noteworthy-projects, #contact, #footer')
-actionByIndex({elements: serviceCards})
-actionByIndex({elements: featuredProjects})
-// actionByIndex({elements: noteworthyProjectsCards})
+
+commonFeat.actionByIndex({elements: homeElements, delay: 3000})
+commonFeat.srAction('#about, #skills, #noteworthy-projects, #contact, #footer')
+commonFeat.actionByIndex({elements: serviceCards})
+commonFeat.actionByIndex({elements: featuredProjects})
+// commonFeatures.actionByIndex({elements: noteworthyProjectsCards})
 
 
 

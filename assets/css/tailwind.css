@@ -1463,10 +1463,6 @@ a:hover {
   display: table;
 }
 
-.table-cell {
-  display: table-cell;
-}
-
 .grid {
   display: grid;
 }
@@ -1479,8 +1475,8 @@ a:hover {
   display: none;
 }
 
-.h-\[15px\] {
-  height: 15px;
+.h-\[20px\] {
+  height: 20px;
 }
 
 .h-\[22px\] {
@@ -1519,22 +1515,6 @@ a:hover {
   height: 100%;
 }
 
-.h-\[1px\] {
-  height: 1px;
-}
-
-.h-\[px\] {
-  height: px;
-}
-
-.h-\[20px\] {
-  height: 20px;
-}
-
-.h-\[0px\] {
-  height: 0px;
-}
-
 .max-h-\[230px\] {
   max-height: 230px;
 }
@@ -1553,14 +1533,6 @@ a:hover {
 
 .w-\[120px\] {
   width: 120px;
-}
-
-.w-\[14\%\] {
-  width: 14%;
-}
-
-.w-\[15px\] {
-  width: 15px;
 }
 
 .w-\[20\%\] {
@@ -1587,12 +1559,12 @@ a:hover {
   width: 30%;
 }
 
-.w-\[40px\] {
-  width: 40px;
+.w-\[40\%\] {
+  width: 40%;
 }
 
-.w-\[48\%\] {
-  width: 48%;
+.w-\[40px\] {
+  width: 40px;
 }
 
 .w-\[50\%\] {
@@ -1622,74 +1594,6 @@ a:hover {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[1px\] {
-  width: 1px;
-}
-
-.w-\[px\] {
-  width: px;
-}
-
-.w-\[2px\] {
-  width: 2px;
-}
-
-.w-\[1\%\] {
-  width: 1%;
-}
-
-.w-\[16\%\] {
-  width: 16%;
-}
-
-.w-\[8\%\] {
-  width: 8%;
-}
-
-.w-\[18\%\] {
-  width: 18%;
-}
-
-.w-\[\%\] {
-  width: %;
-}
-
-.w-\[74\%\] {
-  width: 74%;
-}
-
-.w-\[64\%\] {
-  width: 64%;
-}
-
-.w-\[34\%\] {
-  width: 34%;
-}
-
-.w-\[36\%\] {
-  width: 36%;
-}
-
-.w-\[35\%\] {
-  width: 35%;
-}
-
-.w-\[3\%\] {
-  width: 3%;
-}
-
-.w-\[37\%\] {
-  width: 37%;
-}
-
-.w-\[4\%\] {
-  width: 4%;
-}
-
-.w-\[40\%\] {
-  width: 40%;
 }
 
 .min-w-\[120px\] {
@@ -1892,10 +1796,6 @@ a:hover {
   border-width: 2px;
 }
 
-.border-4 {
-  border-width: 4px;
-}
-
 .border-b-\[2px\] {
   border-bottom-width: 2px;
 }
@@ -1995,11 +1895,6 @@ a:hover {
   padding-bottom: 2rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -2010,6 +1905,14 @@ a:hover {
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
 }
 
 .pt-12 {
@@ -2357,10 +2260,6 @@ a:hover {
     max-height: 200px;
   }
 
-  .xm\:w-\[6\%\] {
-    width: 6%;
-  }
-
   .xm\:max-w-\[170px\] {
     max-width: 170px;
   }
@@ -2380,10 +2279,6 @@ a:hover {
 
   .xm\:pt-16 {
     padding-top: 4rem;
-  }
-
-  .xm\:text-start {
-    text-align: start;
   }
 }
 
@@ -2436,18 +2331,6 @@ a:hover {
 
   .sm\:w-\[500px\] {
     width: 500px;
-  }
-
-  .sm\:w-\[14\%\] {
-    width: 14%;
-  }
-
-  .sm\:w-\[74\] {
-    width: 74;
-  }
-
-  .sm\:w-\[74\%\] {
-    width: 74%;
   }
 
   .sm\:w-\[64\%\] {
@@ -2556,48 +2439,12 @@ a:hover {
     display: none;
   }
 
-  .md\:h-\[22px\] {
-    height: 22px;
-  }
-
   .md\:h-auto {
     height: auto;
   }
 
-  .md\:w-\[22px\] {
-    width: 22px;
-  }
-
-  .md\:w-\[30\%\] {
-    width: 30%;
-  }
-
-  .md\:w-\[\] {
-    width: ;
-  }
-
-  .md\:w-\[14\] {
-    width: 14;
-  }
-
-  .md\:w-\[14\%\] {
-    width: 14%;
-  }
-
-  .md\:w-\[1\%\] {
-    width: 1%;
-  }
-
   .md\:w-\[16\%\] {
     width: 16%;
-  }
-
-  .md\:w-\[3\%\] {
-    width: 3%;
-  }
-
-  .md\:w-\[32\%\] {
-    width: 32%;
   }
 
   .md\:w-\[33\%\] {
@@ -2679,26 +2526,6 @@ a:hover {
 
   .lg\:max-h-\[280px\] {
     max-height: 280px;
-  }
-
-  .lg\:w-\[17\] {
-    width: 17;
-  }
-
-  .lg\:w-\[14\] {
-    width: 14;
-  }
-
-  .lg\:w-\[14\%\] {
-    width: 14%;
-  }
-
-  .lg\:w-\[1\%\] {
-    width: 1%;
-  }
-
-  .lg\:w-\[12\%\] {
-    width: 12%;
   }
 
   .lg\:w-\[11\%\] {
