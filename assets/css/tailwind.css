@@ -1776,6 +1776,10 @@ a:hover {
   overflow: hidden;
 }
 
+.overflow-x-visible {
+  overflow-x: visible;
+}
+
 .overflow-x-scroll {
   overflow-x: scroll;
 }
@@ -1905,14 +1909,6 @@ a:hover {
 
 .pb-8 {
   padding-bottom: 2rem;
-}
-
-.pl-3 {
-  padding-left: 0.75rem;
-}
-
-.pr-3 {
-  padding-right: 0.75rem;
 }
 
 .pt-12 {
